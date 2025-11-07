@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Think Like a General — Ravi Warrier</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Curvy navbar (uses an SVG curve under the header) -->
+    <header class="nav-wrap">
+        <div class="nav">
+            <a class="logo" href="#">#ExecutionCircle</a>
+
+            <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero">Home</a>
+                <a href="#why">Why I Wrote These Books</a>
+                <a href="#books">Which Book</a>
+                <a href="#join">Join</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+
+        <!-- decorative curved SVG bottom -->
+        <svg class="nav-curve" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,30 C360,120 1080,-30 1440,50 L1440,100 L0,100 Z" fill="#0b1020"></path>
+        </svg>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-inner container">
+            <div class="hero-text">
+                <h1>Think Like a General. Build Systems. Conquer Relentlessly.</h1>
+                <p class="lead">The 3-Phase Founder's Journey from Strategic Clarity to Scalable Execution.</p>
+                <p class="cta-row">
+                    <a class="btn primary" href="#books">Find Your Playbook</a>
+                    <a class="btn ghost" href="#why">Why these books?</a>
+                </p>
+            </div>
+
+            <div class="hero-media">
+                <!-- Replace src with your hosted video or use a poster image if you prefer -->
+                <video controls playsinline poster="video-poster.jpg">
+                    <source src="demo-books-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="media-caption">The trilogy — Strategy, Design, Execution</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY I WROTE THESE BOOKS -->
+    <section id="why" class="why container">
+        <div class="split">
+            <div class="split-media">
+                <!-- Embedded video of Prof. Ravi Warrier -->
+                <div class="video-wrap">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Ravi Warrier" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="split-text">
+                <h2>Why I Wrote These Books — For TRUST</h2>
+                <p class="muted">Get to know Prof. Ravi Warrier and the philosophy behind the trilogy.</p>
+
+                <div class="author-card">
+                    <img src="ravi-photo.jpg" alt="Prof. Ravi Warrier">
+                    <div>
+                        <h3>Meet Prof. Ravi Warrier</h3>
+                        <p>As a professor and the founder of the startup advisory Funding Pitchcraft, Ravi has coached
+                            hundreds of founders. He discovered that success isn't just about strategy; it's about the
+                            operating system that runs the company. This trilogy is his playbook.</p>
+
+                        <p class="author-cta">
+                            <a class="btn small" href="#about">Learn More About Ravi</a>
+                            <a class="btn small ghost" href="https://www.linkedin.com" target="_blank"
+                                rel="noopener">LinkedIn</a>
+                        </p>
+
+                        <p class="links-inline">
+                            <a href="#blog">Read the blog</a> • <a href="#community">Community</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKS COMPARISON -->
+    <section id="books" class="books container">
+        <h2 class="section-title">Which type of founder are you — or what's your next step?</h2>
+        <p class="muted center">Choose the book that fits your stage and challenges. If you've read one, the next will
+            guide you forward.</p>
+
+        <div class="books-grid">
+            <!-- Book 1: Strategy -->
+            <article class="book-card">
+                <div class="book-media"><img src="book-strategy.jpg" alt="Strategy book"></div>
+                <div class="book-body">
+                    <h3>STRATEGY</h3>
+                    <h4>A Startup Founder's Guide to the Art of War</h4>
+                    <p class="book-for">For: The founder facing high uncertainty</p>
+                    <a class="btn outline" href="#">Learn About the Book</a>
+                </div>
+            </article>
+
+            <!-- Book 2: Design -->
+            <article class="book-card">
+                <div class="book-media"><img src="book-design.jpg" alt="Design book"></div>
+                <div class="book-body">
+                    <h3>DESIGN</h3>
+                    <h4>Design a Better Business: An Entrepreneurship Fable</h4>
+                    <p class="book-for">For: The founder who needs to build the right model</p>
+                    <a class="btn outline" href="#">Learn About the Book</a>
+                </div>
+            </article>
+
+            <!-- Book 3: Execution -->
+            <article class="book-card">
+                <div class="book-media"><img src="book-execution.jpg" alt="Execution book"></div>
+                <div class="book-body">
+                    <h3>EXECUTION</h3>
+                    <h4>Execution Warfare: The Founder's Operating System</h4>
+                    <p class="book-for">For: The post-pivot founder struggling with scaling chaos</p>
+                    <a class="btn outline" href="#">Learn About the Book</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- JOIN THE CONVERSATION / SOCIAL PROOF -->
+    <section id="join" class="join container">
+        <h2 class="section-title">Join the Conversation</h2>
+
+        <div class="join-grid">
+            <div class="card">
+                <h3>Read the Blog</h3>
+                <p>Get the latest insights on strategy, execution, and founder mindset.</p>
+                <a class="btn small" href="#blog">Read the Blog</a>
+            </div>
+
+            <div class="card">
+                <h3>Join the Community</h3>
+                <p>Connect with other founders in the private <strong>#ExecutionCircle</strong>.</p>
+                <a class="btn small" href="#community">Request Community Access</a>
+            </div>
+
+            <div class="card">
+                <h3>Contact Ravi</h3>
+                <p>Leave a message — what's your biggest challenge? Feedback on the books?</p>
+
+                <form id="contactForm" class="contact-form" action="#" method="post"
+                    onsubmit="event.preventDefault(); alert('Message submitted (demo).');">
+                    <input name="name" type="text" placeholder="Your name" required>
+                    <input name="email" type="email" placeholder="Your email" required>
+                    <textarea name="message" rows="4" placeholder="Leave a message..." required></textarea>
+                    <div class="form-row">
+                        <button class="btn primary" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <p class="cred">Mentioning Funding Pitchcraft to show credibility.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>Think Like a General</strong>
+                <p class="muted">Ravi Warrier — Founder, Funding Pitchcraft</p>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#hero">Home</a>
+                <a href="#books">Books</a>
+                <a href="#join">Community</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+
+        <div class="copyright">
+            &copy; <span id="year"></span> Think Like a General • All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // small JS: mobile menu toggle & year
+        (function () {
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+            navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+            // smooth scroll for internal anchors
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href.length > 1) {
+                        e.preventDefault();
+                        const el = document.querySelector(href);
+                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        navLinks.classList.remove('open');
+                    }
+                });
+            });
+
+            // year
+            document.getElementById('year').textContent = new Date().getFullYear();
+        })();
+    </script>
+
+    <script>
+        // Navbar hide/show on scroll
+        (function () {
+            let lastScroll = 0;
+            const navbar = document.querySelector('.nav-wrap');
+
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+
+                if (currentScroll <= 0) {
+                    navbar.classList.remove('hidden');
+                    return;
+                }
+
+                if (currentScroll > lastScroll && !navbar.classList.contains('hidden')) {
+                    // scrolling down → hide
+                    navbar.classList.add('hidden');
+                } else if (currentScroll < lastScroll && navbar.classList.contains('hidden')) {
+                    // scrolling up → show
+                    navbar.classList.remove('hidden');
+                }
+
+                lastScroll = currentScroll;
+            });
+        })();
+    </script>
+</body>
+
+</html>
