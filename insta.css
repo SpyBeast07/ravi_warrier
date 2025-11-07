@@ -142,32 +142,96 @@ body {
   margin-bottom: 30px;
 }
 
+/* ---------- Instagram Layout ---------- */
 .insta-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
-  padding: 20px 20px;
+  padding: 20px;
+  justify-items: center;
 }
 
-.insta-card {
-  background: white;
+/* Individual Post */
+.insta-post {
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 12px;
+  max-width: 400px;
   overflow: hidden;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
 }
 
-.insta-card:hover {
+.insta-post:hover {
   transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.insta-card img {
-  width: 100%;
-  height: 280px;
+/* Header (Profile) */
+.insta-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.profile-img {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-.caption {
-  padding: 14px;
-  text-align: left;
+.profile-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.location {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+/* Actions */
+.insta-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: 1.4rem;
+  user-select: none;
+}
+
+.left-icons span,
+.right-icon span {
+  cursor: pointer;
+}
+
+/* Likes + Caption */
+.insta-likes {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0 14px;
+  margin-bottom: 6px;
+}
+
+.insta-caption {
+  padding: 0 14px 16px;
+  font-size: 0.9rem;
+  color: #222;
+  line-height: 1.4;
 }
