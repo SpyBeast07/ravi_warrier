@@ -295,11 +295,43 @@ body {
   line-height: 1.5;
 }
 
-.author-cta .btn {
-  margin-top: 8px;
+.author-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.btn.linkedin {
+  display: inline-flex;
+  justify-content: center;
+  background-color: #0077b5;
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 16px rgba(0, 119, 181, 0.25);
+  transition: all 0.2s ease;
+  width: auto;
+  padding: 8px 14px;
+}
+
+.btn.small {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn.linkedin:hover {
+  background-color: #005f87;
+  transform: translateY(-3px);
 }
 
 .links-inline {
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
   font-size: 0.95rem;
 }
@@ -373,6 +405,22 @@ body {
 .book-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 46px rgba(3, 7, 18, 0.1);
+}
+
+.divider {
+  height: 2px;
+  width: 80%;
+  background-color: #db1f1f;
+  margin: 0 auto 16px;
+  border-radius: 2px;
+  opacity: 0.8;
+}
+.book-card:hover .divider {
+  height: 3px;
+  width: 90%;
+  background-color: #db1f1f;
+  opacity: 1;
+  box-shadow: 0 0 8px rgba(219, 31, 31, 0.4);
 }
 
 .book-media img {
