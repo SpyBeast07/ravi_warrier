@@ -189,11 +189,20 @@ body {
 .hero-media {
   position: relative;
   z-index: 5;
-  width: 90vw;
+  width: 50vw;
   max-width: 1100px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(2, 6, 23, 0.6);
+}
+
+/* Just change 'video' to 'iframe' here */
+.hero-media iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000; /* Shows black while loading */
+  display: block;
+  border: none; /* Ensures no default iframe border */
 }
 
 .hero-media video {
