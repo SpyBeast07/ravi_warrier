@@ -57,74 +57,71 @@ body {
 }
 
 .nav-wrap {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
-  background: #ffffff;
-  color: white;
   z-index: 999;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.35s ease, background 0.3s ease;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 5%;
-  max-width: 1200px;
-  margin: 0 auto;
+/* --------- NAVBAR --------- */
+.main-navbar {
+    max-width: 1300px;
+    background: #0b1020;
+    padding: 11px 28px;
+    margin: 0px auto;
+    border-radius: 0px 0px 40px 40px;
+    border-top: hidden;
+    border: 1px solid rgba(173, 173, 181, 0.619);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
+/* -------- LEFT SIDE / LOGO -------- */
 .logo {
-  text-decoration: none;
-  color: var(--card);
-  background: linear-gradient(180deg, var(--accent), #14181f);
-  padding: 10px 14px;
-  border-radius: 10px 50px 10px 50px;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 0.2px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
+.logo span {
+    color: #ff8f8f;
 }
 
-.nav-links a {
-  color: rgba(0, 0, 0, 0.9);
-  text-decoration: none;
-  font-weight: 500;
-  padding: 10px 12px;
-  border-radius: 8px;
-  transition: background 0.2s;
+/* -------- RIGHT SIDE / LINKS -------- */
+.nav-right a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
 }
 
-.nav-links a:hover {
-  background: rgba(255, 255, 255, 0.1);
+.nav-right a:hover {
+    opacity: 0.6;
 }
 
-.nav-wrap.hidden {
-  transform: translateY(-100%);
+/* ----- MAIN CONTENT (Demo) ----- */
+.page-content {
+    max-width: 1100px;
+    background: #ffffff;
+    padding: 40px;
+    margin: 0px auto;
+    border-radius: 18px;
 }
 
-.nav-toggle {
-  display: none;
-}
 
 body {
-  padding-top: 52px; /* height of navbar */
+  /* padding-top: 52px; */
 }
 
-/* decorative curve */
-.nav-curve {
-  display: block;
-  width: 100%;
-  height: 60px;
-  margin-top: -12px;
-}
 
 /* ---------- HERO ---------- */
 .hero {
@@ -631,4 +628,122 @@ body {
   .video-wrap iframe {
     height: 220px;
   }
+}
+
+
+/* ===============================
+   CONTACT SECTION WITH GLASS FORM
+================================ */
+.contact-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Background Image */
+.contact-bg {
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2') center/cover no-repeat;
+    z-index: 1;
+}
+
+/* Glass Form Card */
+.contact-glass {
+    position: relative;
+    z-index: 2;
+    width: 550px;
+    padding: 40px 35px;
+
+    background: rgba(255, 255, 255, 0.418);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.418);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.893);
+
+    text-align: center;
+    animation: fadeUp 0.8s ease;
+    
+}
+
+.contact-glass h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.contact-sub {
+    color: #000000;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* Input Groups */
+.contact-form .form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #000000;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    background: rgba(255,255,255,0.25);
+    color: #000000;
+
+    border: 1px solid rgba(255,255,255,0.4);
+    font-size: 14px;
+}
+
+/* Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Fade Animation */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    .contact-glass {
+        width: 90%;
+    }
 }
