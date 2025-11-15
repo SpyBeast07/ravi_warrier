@@ -12,14 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/new.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/new.css" />
 </head>
 
 <body>
     <div id="navbar-container"></div>
     <script>
-        fetch("pages/navbar.html")
+        fetch("navbar.html")
             .then(res => res.text())
             .then(data => document.getElementById("navbar-container").innerHTML = data);
     </script>
@@ -32,8 +32,8 @@
             <p class="hero-subheading">I help founders turn clarity into momentum.</p>
 
             <div class="hero-cta">
-                <a href="pages/triology_page.html" class="btn primary">View the Trilogy Books</a>
-                <a href="pages/about.html" class="btn secondary">Meet Your Guide</a>
+                <a href="triology_page.html" class="btn primary">View the Trilogy Books</a>
+                <a href="about.html" class="btn secondary">Meet Your Guide</a>
             </div>
 
         </div>
@@ -58,7 +58,7 @@
                 and daily rituals you need to win your market.
             </p>
 
-            <a href="pages/about.html" class="btn primary intro-btn">Read Full Story →</a>
+            <a href="about.html" class="btn primary intro-btn">Read Full Story →</a>
         </div>
     </section>
 
@@ -165,19 +165,19 @@
             <div class="start-item">
                 <h3>Founder Assessment</h3>
                 <p>AI-powered evaluation of your strategy, design, and execution gaps.</p>
-                <a href="pages/assessment.html" class="gs-btn">Take Assessment →</a>
+                <a href="assessment.html" class="gs-btn">Take Assessment →</a>
             </div>
 
             <div class="start-item">
                 <h3>Join the Community</h3>
                 <p>Weekly AMAs, practice circles, and high-signal founder discussions.</p>
-                <a href="pages/community.html" class="gs-btn">Join Community →</a>
+                <a href="community.html" class="gs-btn">Join Community →</a>
             </div>
 
             <div class="start-item">
                 <h3>Contact Ravi</h3>
                 <p>Reach out for guidance, collaborations, consulting, or speaking requests.</p>
-                <a href="pages/contact.html" class="gs-btn">Contact →</a>
+                <a href="contact.html" class="gs-btn">Contact →</a>
             </div>
 
         </div>
@@ -193,13 +193,13 @@
             <div class="more-item">
                 <h3>Work With Me</h3>
                 <p class="sub">Consulting</p>
-                <a href="../pages/workwithme.html" class="more-btn">Work With Me →</a>
+                <a href="workwithme.html" class="more-btn">Work With Me →</a>
             </div>
 
             <div class="more-item">
                 <h3>Invite Me to Speak</h3>
                 <p class="sub">Speaking</p>
-                <a href="../pages/speaking.html" class="more-btn">Invite Me to Speak →</a>
+                <a href="speaking.html" class="more-btn">Invite Me to Speak →</a>
             </div>
 
         </div>
@@ -209,7 +209,7 @@
     <!-- Footer -->
     <div id="footer-container"></div>
     <script>
-        fetch("pages/footer.html")
+        fetch("footer.html")
             .then(res => res.text())
             .then(data => document.getElementById("footer-container").innerHTML = data);
     </script>
