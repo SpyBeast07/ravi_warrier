@@ -1,3 +1,4 @@
+@import url("../styles/global.css");
 .search-filter-bar {
     display: flex;
     flex-wrap: wrap;

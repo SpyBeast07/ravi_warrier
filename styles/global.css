@@ -1,0 +1,202 @@
+/* ============================================================
+GLOBAL DESIGN SYSTEM — Applies to ALL Pages
+============================================================ */
+
+/* -------------------------
+1. ROOT DESIGN TOKENS
+------------------------- */
+
+:root {
+  /* Colors */
+  --blue: #2d6cf6;
+  --blue-dark: #1f4ebe;
+  --video-light-blue: #e8f0ff;
+
+  --ink: #0e0e10;
+  --white: #ffffff;
+
+  --gray-100: #f5f6f7;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+
+  --success: #00a889;
+  --error: #e03636;
+
+  /* Fonts */
+  --font-serif: "Fraunces", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Heading Sizes */
+  --h1: 56px;
+  --h2: 44px;
+  --h3: 32px;
+
+  /* Body Sizes */
+  --body-lg: 18px;
+  --body: 16px;
+
+  /* Eyebrow Text */
+  --eyebrow-size: 12px;
+  --eyebrow-spacing: 3%;
+
+  /* Spacing (8-pt System) */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+
+  /* Components */
+  --card-radius: 12px;
+  --btn-radius: 8px;
+
+  --container-max: 1440px;
+  --container-padding: 80px;
+
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* -------------------------
+2. GLOBAL RESET
+------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: #f7f8fb;
+  line-height: 1.55;
+}
+
+/* -------------------------
+3. TYPOGRAPHY
+------------------------- */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: 1.1;
+}
+h2 {
+  font-size: var(--h2);
+  line-height: 1.15;
+}
+h3 {
+  font-size: var(--h3);
+  line-height: 1.2;
+}
+
+p {
+  font-size: var(--body);
+  font-weight: 400;
+  color: var(--gray-700);
+  margin-bottom: var(--space-16);
+}
+
+/* Eyebrow text */
+.eyebrow {
+  font-size: var(--eyebrow-size);
+  font-weight: 700;
+  letter-spacing: var(--eyebrow-spacing);
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: var(--space-8);
+}
+
+/* -------------------------
+4. LAYOUT
+------------------------- */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* -------------------------
+5. CARDS
+------------------------- */
+
+.card {
+  background: var(--white);
+  border-radius: var(--card-radius);
+  padding: var(--space-32);
+  box-shadow: var(--shadow-subtle);
+}
+
+/* -------------------------
+6. BUTTONS
+------------------------- */
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: var(--btn-radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+  font-size: var(--body);
+}
+
+/* Primary Button */
+.btn-primary {
+  background: var(--blue);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--blue-dark);
+  transform: translateY(-3px);
+}
+
+/* Secondary Button (outline) */
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--gray-300);
+}
+.btn-secondary:hover {
+  background: var(--gray-100);
+  transform: translateY(-3px);
+}
+
+/* -------------------------
+7. NAVIGATION
+------------------------- */
+
+.simple-navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-32);
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.nav-right a {
+  font-size: 16px;
+  font-weight: 500;
+}

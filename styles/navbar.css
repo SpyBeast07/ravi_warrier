@@ -1,0 +1,89 @@
+@import url("../styles/global.css");
+/* ---------- TOP BANNER ---------- */
+.nav-top-banner {
+  background: #ffcc00;
+  color: #222;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  letter-spacing: 0.3px;
+}
+
+
+/* ------- CLEAN WHITE NAVBAR ------- */
+.simple-navbar {
+  width: 100%;
+  padding: 18px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* -------- LOGO LEFT -------- */
+.nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #0b1020;
+}
+
+.nav-logo span {
+  color: #db1f1f;
+}
+
+/* clickable logo */
+.nav-logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* -------- RIGHT NAV LINKS -------- */
+.nav-right {
+  display: flex;
+  gap: 32px;         /* spacing between items */
+}
+
+.nav-right a {
+  color: #0b1020;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.25s;
+}
+
+.nav-right a:hover {
+  opacity: 0.6;
+}
+
+/* ------- TOP BANNER STAYS SAME ------- */
+.nav-top-banner {
+  background: #ffcc00;
+  color: #222;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  letter-spacing: 0.3px;
+}
+
+
+/* ---------- RESPONSIVE (Mobile) ---------- */
+@media (max-width: 1020px) {
+
+  .simple-navbar {
+    padding: 16px 20px;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .nav-speak {
+    padding: 8px 16px;
+  }
+}
