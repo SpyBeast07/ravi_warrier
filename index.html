@@ -11,14 +11,14 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/new.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/new.css" />
 </head>
 
 <body>
     <div id="navbar-container"></div>
     <script>
-        fetch("../pages/navbar.html")
+        fetch("pages/navbar.html")
             .then(res => res.text())
             .then(data => document.getElementById("navbar-container").innerHTML = data);
     </script>
@@ -52,6 +52,48 @@
                     allowfullscreen>
                 </iframe>
                 <p class="media-caption">The trilogy — Strategy, Design, Execution</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY I WROTE THESE BOOKS -->
+    <section id="why" class="why container">
+        <div class="split">
+            <div class="split-media">
+                <!-- Embedded video of Prof. Ravi Warrier -->
+                <div class="video-wrap">
+                    <iframe src="https://www.youtube.com/embed/6stlCkUDG_s?si=J8OS5pZJE1YBFj82" title="Ravi Warrier"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="split-text">
+                <h2>Why I Wrote These Books</h2>
+                <p class="muted">Get to know Prof. Ravi Warrier and the philosophy behind the trilogy.</p>
+
+                <div class="author-card">
+                    <img src="assets/ravi.jpg" alt="Prof. Ravi Warrier">
+                    <div>
+                        <h3>Meet Prof. Ravi Warrier</h3>
+                        <p>As a professor and the founder of the startup advisory Funding Pitchcraft, Ravi has coached
+                            hundreds of founders. He discovered that success isn't just about strategy; it's about the
+                            operating system that runs the company. This trilogy is his playbook.</p>
+
+                        <p class="author-cta">
+                            <a class="btn small" href="#about">Learn More About Ravi</a>
+                            <a class="btn small linkedin" href="https://www.linkedin.com/in/raviwarrier/"
+                                target="_blank" rel="noopener">
+                                LinkedIn
+                            </a>
+                        </p>
+
+                        <p class="links-inline">
+                            <a href="#blog">Read the blog</a> • <a href="#community">Community</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -102,7 +144,7 @@
     </section>
 
     <!-- About the AUTHOR -->
-     <section class="modern-feature container">
+    <section class="modern-feature container">
 
         <div class="mf-left">
 
@@ -124,7 +166,7 @@
         </div>
 
         <div class="mf-right">
-            <h1 class="mf-percent">Meet the Author — Prof. Ravi Warrier</h1>
+            <h1 class="mf-percent">Meet the Author — Ravi Warrier</h1>
             <p class="mf-sub">Strategic advisor, professor & founder of Funding Pitchcraft.</p>
 
             <div class="mf-meta">
@@ -144,47 +186,10 @@
                 <div class="mf-tag">READ BLOGS</div>
             </div>
         </div>
-
     </section>
-
-    <section class="contact-section">
-
-        <!-- Background -->
-        <div class="contact-bg"></div>
-
-        <!-- Glass Form -->
-        <div class="contact-glass">
-
-            <h2>Contact Ravi</h2>
-            <p class="contact-sub">Have feedback, questions, or want to reach out?</p>
-
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
-
-                <div class="form-group">
-                    <label>Your Name</label>
-                    <input type="text" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="5" placeholder="Write your message..." required></textarea>
-                </div>
-
-                <button type="submit" class="btn-submit">Send Message</button>
-
-            </form>
-        </div>
-
-    </section>
-
 
     <!-- JOIN THE CONVERSATION / SOCIAL PROOF -->
-    <!-- <section id="join" class="join container">
+    <section id="join" class="join container">
         <h2 class="section-title">Join the Conversation</h2>
 
         <div class="join-grid">
@@ -217,14 +222,13 @@
         </div>
 
         <p class="cred">Mentioning Funding Pitchcraft to show credibility.</p>
-    </section> -->
+    </section>
 
-    <p class="cred">Mentioning Funding Pitchcraft to show credibility.</p>
 
     <!-- Footer -->
     <div id="footer-container"></div>
     <script>
-        fetch("../pages/footer.html")
+        fetch("pages/footer.html")
             .then(res => res.text())
             .then(data => document.getElementById("footer-container").innerHTML = data);
     </script>

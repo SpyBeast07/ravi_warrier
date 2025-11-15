@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Ads — Think Like a General</title>
+    <link rel="stylesheet" href="../styles/archieve.css" />
+</head>
+
+<script>
+    const searchInput = document.getElementById("searchInput");
+    const yearFilter = document.getElementById("yearFilter");
+    const monthFilter = document.getElementById("monthFilter");
+    const dateFilter = document.getElementById("dateFilter");
+    const locationFilter = document.getElementById("locationFilter");
+
+    const posts = document.querySelectorAll(".insta-post");
+
+    function filterPosts() {
+        const searchText = searchInput.value.toLowerCase();
+        const year = yearFilter.value;
+        const month = monthFilter.value;
+        const date = dateFilter.value;
+        const location = locationFilter.value.toLowerCase();
+
+        posts.forEach(post => {
+            let match = true;
+
+            let pYear = post.dataset.year;
+            let pMonth = post.dataset.month;
+            let pDate = post.dataset.date;
+            let pLoc = post.dataset.location.toLowerCase();
+            let pCaption = post.dataset.caption.toLowerCase();
+            let pUsername = post.dataset.username.toLowerCase();
+
+            // Text Search (caption + username)
+            if (!pCaption.includes(searchText) && !pUsername.includes(searchText)) {
+                match = false;
+            }
+
+            // Year Filter
+            if (year && pYear !== year) match = false;
+
+            // Month Filter
+            if (month && pMonth !== month) match = false;
+
+            // Date Filter
+            if (date && pDate !== date) match = false;
+
+            // Location Filter
+            if (location && !pLoc.includes(location)) match = false;
+
+            // SHOW / HIDE
+            post.style.display = match ? "block" : "none";
+        });
+    }
+
+    searchInput.addEventListener("input", filterPosts);
+    yearFilter.addEventListener("change", filterPosts);
+    monthFilter.addEventListener("change", filterPosts);
+    dateFilter.addEventListener("change", filterPosts);
+    locationFilter.addEventListener("input", filterPosts);
+</script>
+
+
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch("../pages/navbar.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data);
+    </script>
+
+    <main class="insta-feed">
+        <div class="search-filter-bar">
+
+            <input type="text" id="searchInput" placeholder="Search posts...">
+
+            <select id="yearFilter">
+                <option value="">Year</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+            </select>
+
+            <select id="monthFilter">
+                <option value="">Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+
+            <input type="date" id="dateFilter">
+
+            <input type="text" id="locationFilter" placeholder="Location">
+
+        </div>
+
+
+        <h1 class="main-heading">Instagram Ad Campaigns</h1>
+        <p class="desc">Our latest promotional creatives designed for social media impact.</p>
+
+
+        <div class="insta-grid">
+            <!-- Instagram Post 1 -->
+            <div class="insta-post">
+
+                <!-- HEADER -->
+                <div class="insta-header">
+                    <img src="../assets/ravi.jpg" class="insta-avatar" alt="profile">
+                    <div class="insta-user">
+                        <span class="username">alex.anyways18</span>
+                        <span class="sub">with 6 others</span>
+                    </div>
+
+                    <img src="https://img.icons8.com/fluency/48/ellipsis.png" class="insta-more" alt="more">
+                </div>
+
+                <!-- MAIN IMAGE -->
+                <div class="fixed-image-box">
+                    <img src="../assets/ravi.jpg" alt="Post">
+                </div>
+
+                <!-- <div class="insta-image">
+                    <img src="post.jpg" alt="Post image">
+                </div> -->
+
+                <!-- ACTION BAR -->
+                <div class="insta-actions">
+                    <div class="left-icons">
+                        <img src="https://img.icons8.com/windows/32/like--v1.png" class="icon" alt="like">
+                        <img src="https://img.icons8.com/ios/50/speech-bubble--v1.png" class="icon" alt="comment">
+                        <img src="https://img.icons8.com/ios/50/paper-plane--v1.png" class="icon" alt="share">
+                    </div>
+
+                    <img src="https://img.icons8.com/material-outlined/24/bookmark-ribbon--v1.png" class="icon bookmark"
+                        alt="save">
+                </div>
+
+                <!-- LIKES -->
+                <div class="insta-likes">
+                    Liked by <strong>azevedo_drdr</strong> and others
+                </div>
+
+                <!-- CAPTION -->
+                <div class="insta-caption">
+                    <span class="username">alex.anyways18</span>
+                    it’s my bestie’s bday today, add your fav memory with her 🎉💙
+                </div>
+
+            </div>
+
+            <!-- POST-2 -->
+            <div class="insta-post">
+
+                <!-- HEADER -->
+                <div class="insta-header">
+                    <img src="../assets/ravi.jpg" class="insta-avatar" alt="profile">
+                    <div class="insta-user">
+                        <span class="username">alex.anyways18</span>
+                        <span class="sub">with 6 others</span>
+                    </div>
+
+                    <img src="https://img.icons8.com/fluency/48/ellipsis.png" class="insta-more" alt="more">
+                </div>
+
+                <!-- MAIN IMAGE -->
+                <div class="fixed-image-box">
+                    <img src="../assets/ravi.jpg" alt="Post">
+                </div>
+
+                <!-- <div class="insta-image">
+                    <img src="post.jpg" alt="Post image">
+                </div> -->
+
+                <!-- ACTION BAR -->
+                <div class="insta-actions">
+                    <div class="left-icons">
+                        <img src="https://img.icons8.com/windows/32/like--v1.png" class="icon" alt="like">
+                        <img src="https://img.icons8.com/ios/50/speech-bubble--v1.png" class="icon" alt="comment">
+                        <img src="https://img.icons8.com/ios/50/paper-plane--v1.png" class="icon" alt="share">
+                    </div>
+
+                    <img src="https://img.icons8.com/material-outlined/24/bookmark-ribbon--v1.png" class="icon bookmark"
+                        alt="save">
+                </div>
+
+                <!-- LIKES -->
+                <div class="insta-likes">
+                    Liked by <strong>azevedo_drdr</strong> and others
+                </div>
+
+                <!-- CAPTION -->
+                <div class="insta-caption">
+                    <span class="username">alex.anyways18</span>
+                    it’s my bestie’s bday today, add your fav memory with her 🎉💙
+                </div>
+            </div>
+
+            <!-- POST-3 -->
+            <div class="insta-post">
+
+                <!-- HEADER -->
+                <div class="insta-header">
+                    <img src="../assets/ravi.jpg" class="insta-avatar" alt="profile">
+                    <div class="insta-user">
+                        <span class="username">alex.anyways18</span>
+                        <span class="sub">with 6 others</span>
+                    </div>
+
+                    <img src="https://img.icons8.com/fluency/48/ellipsis.png" class="insta-more" alt="more">
+                </div>
+
+                <!-- MAIN IMAGE -->
+                <div class="fixed-image-box">
+                    <img src="../assets/ravi.jpg" alt="Post">
+                </div>
+
+                <!-- <div class="insta-image">
+                    <img src="post.jpg" alt="Post image">
+                </div> -->
+
+                <!-- ACTION BAR -->
+                <div class="insta-actions">
+                    <div class="left-icons">
+                        <img src="https://img.icons8.com/windows/32/like--v1.png" class="icon" alt="like">
+                        <img src="https://img.icons8.com/ios/50/speech-bubble--v1.png" class="icon" alt="comment">
+                        <img src="https://img.icons8.com/ios/50/paper-plane--v1.png" class="icon" alt="share">
+                    </div>
+
+                    <img src="https://img.icons8.com/material-outlined/24/bookmark-ribbon--v1.png" class="icon bookmark"
+                        alt="save">
+                </div>
+
+                <!-- LIKES -->
+                <div class="insta-likes">
+                    Liked by <strong>azevedo_drdr</strong> and others
+                </div>
+
+                <!-- CAPTION -->
+                <div class="insta-caption">
+                    <span class="username">alex.anyways18</span>
+                    it’s my bestie’s bday today, add your fav memory with her 🎉💙
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="insta-feed">
+        <h1 class="main-heading">Instagram Memes</h1>
+        <p class="desc">Engaging with the latest trends and humor.</p>
+
+        <div class="insta-grid">
+            <!-- Instagram Meme 1 -->
+            <div class="insta-post">
+
+                <!-- HEADER -->
+                <div class="insta-header">
+                    <img src="../assets/ravi.jpg" class="insta-avatar" alt="profile">
+                    <div class="insta-user">
+                        <span class="username">alex.anyways18</span>
+                        <span class="sub">with 6 others</span>
+                    </div>
+
+                    <img src="https://img.icons8.com/fluency/48/ellipsis.png" class="insta-more" alt="more">
+                </div>
+
+                <!-- MAIN IMAGE -->
+                <div class="fixed-image-box">
+                    <img src="../assets/ravi.jpg" alt="Post">
+                </div>
+
+                <!-- <div class="insta-image">
+                    <img src="post.jpg" alt="Post image">
+                </div> -->
+
+                <!-- ACTION BAR -->
+                <div class="insta-actions">
+                    <div class="left-icons">
+                        <img src="https://img.icons8.com/windows/32/like--v1.png" class="icon" alt="like">
+                        <img src="https://img.icons8.com/ios/50/speech-bubble--v1.png" class="icon" alt="comment">
+                        <img src="https://img.icons8.com/ios/50/paper-plane--v1.png" class="icon" alt="share">
+                    </div>
+
+                    <img src="https://img.icons8.com/material-outlined/24/bookmark-ribbon--v1.png" class="icon bookmark"
+                        alt="save">
+                </div>
+
+                <!-- LIKES -->
+                <div class="insta-likes">
+                    Liked by <strong>azevedo_drdr</strong> and others
+                </div>
+
+                <!-- CAPTION -->
+                <div class="insta-caption">
+                    <span class="username">alex.anyways18</span>
+                    it’s my bestie’s bday today, add your fav memory with her 🎉💙
+                </div>
+
+            </div>
+
+            <div class="insta-post">
+
+                <!-- HEADER -->
+                <div class="insta-header">
+                    <img src="../assets/ravi.jpg" class="insta-avatar" alt="profile">
+                    <div class="insta-user">
+                        <span class="username">alex.anyways18</span>
+                        <span class="sub">with 6 others</span>
+                    </div>
+
+                    <img src="https://img.icons8.com/fluency/48/ellipsis.png" class="insta-more" alt="more">
+                </div>
+
+                <!-- MAIN IMAGE -->
+                <div class="fixed-image-box">
+                    <img src="../assets/ravi.jpg" alt="Post">
+                </div>
+
+                <!-- <div class="insta-image">
+                    <img src="post.jpg" alt="Post image">
+                </div> -->
+
+                <!-- ACTION BAR -->
+                <div class="insta-actions">
+                    <div class="left-icons">
+                        <img src="https://img.icons8.com/windows/32/like--v1.png" class="icon" alt="like">
+                        <img src="https://img.icons8.com/ios/50/speech-bubble--v1.png" class="icon" alt="comment">
+                        <img src="https://img.icons8.com/ios/50/paper-plane--v1.png" class="icon" alt="share">
+                    </div>
+
+                    <img src="https://img.icons8.com/material-outlined/24/bookmark-ribbon--v1.png" class="icon bookmark"
+                        alt="save">
+                </div>
+
+                <!-- LIKES -->
+                <div class="insta-likes">
+                    Liked by <strong>azevedo_drdr</strong> and others
+                </div>
+
+                <!-- CAPTION -->
+                <div class="insta-caption">
+                    <span class="username">alex.anyways18</span>
+                    it’s my bestie’s bday today, add your fav memory with her 🎉💙
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="news-container">
+        <h1 class="main-heading">Newspaper Ad Campaigns</h1>
+        <p class="desc">High-impact print creatives designed for traditional media distribution.</p>
+
+        <div class="news-grid">
+
+            <!-- Portrait A4 Ad -->
+            <article class="news-card">
+                <h3 class="news-title">A4 Portrait Ad</h3>
+                <div class="news-image-box portrait">
+                    <img src="../assets/news-portrait.jpg" alt="A4 Portrait Newspaper Ad">
+                </div>
+            </article>
+
+            <!-- Landscape A4 Ad -->
+            <article class="news-card">
+                <h3 class="news-title">A4 Landscape Ad</h3>
+                <div class="news-image-box landscape">
+                    <img src="../assets/news-landscape.jpg" alt="A4 Landscape Newspaper Ad">
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <script>
+        fetch("../pages/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-container").innerHTML = data);
+    </script>
+</body>
+
+</html>

@@ -38,74 +38,80 @@ body {
   padding: 40px var(--container-padding);
 }
 
-/* ---------- NAV ---------- */
-/* ---------- Yellow banner above navbar ---------- */
+/* ------- CLEAN WHITE NAVBAR ------- */
+.simple-navbar {
+  width: 100%;
+  padding: 18px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  position: relative;
+}
+
+/* LOGO (LEFT) */
+.nav-logo {
+  color: #0b1020;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.nav-logo span {
+  color: #db1f1f;
+}
+
+/* CENTER LINKS */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 30px;
+}
+
+.nav-center a {
+  color: #0b1020;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.25s ease;
+}
+
+.nav-center a:hover {
+  opacity: 0.6;
+}
+
+/* RIGHT SIDE SPEAK BUTTON */
+.nav-speak {
+  background: #db1f1f;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.nav-speak:hover {
+  background: #b51818;
+  transform: translateY(-2px);
+}
+
+/* Banner remains same */
 .nav-top-banner {
-  background: #ffcc00; /* bright yellow */
-  color: #222; /* dark text for readability */
+  background: #ffcc00;
+  color: #222;
   text-align: center;
   font-weight: 600;
   font-size: 0.9rem;
   padding: 6px 10px;
   letter-spacing: 0.3px;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-/* When navbar hides, hide banner too */
-.nav-wrap.hidden .nav-top-banner {
-  display: none;
-}
-
-.nav-wrap {
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.35s ease, background 0.3s ease;
-}
-
-/* --------- NAVBAR --------- */
-.main-navbar {
-    max-width: 1300px;
-    background: #0b1020;
-    padding: 11px 28px;
-    margin: 0px auto;
-    border-radius: 0px 0px 40px 40px;
-    border-top: hidden;
-    border: 1px solid rgba(173, 173, 181, 0.619);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
-
-/* -------- LEFT SIDE / LOGO -------- */
-.logo {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-}
-
-.logo span {
-    color: #ff8f8f;
-}
-
-/* -------- RIGHT SIDE / LINKS -------- */
-.nav-right a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 17px;
-    font-weight: 400;
-    transition: 0.3s ease-in-out;
-}
-
-.nav-right a:hover {
-    opacity: 0.6;
 }
 
 /* ----- MAIN CONTENT (Demo) ----- */
@@ -637,122 +643,4 @@ body {
   .video-wrap iframe {
     height: 220px;
   }
-}
-
-
-/* ===============================
-   CONTACT SECTION WITH GLASS FORM
-================================ */
-.contact-section {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-/* Background Image */
-.contact-bg {
-    position: absolute;
-    inset: 0;
-    background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2') center/cover no-repeat;
-    z-index: 1;
-}
-
-/* Glass Form Card */
-.contact-glass {
-    position: relative;
-    z-index: 2;
-    width: 550px;
-    padding: 40px 35px;
-
-    background: rgba(255, 255, 255, 0.418);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-radius: 20px;
-
-    border: 1px solid rgba(255, 255, 255, 0.418);
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.893);
-
-    text-align: center;
-    animation: fadeUp 0.8s ease;
-    
-}
-
-.contact-glass h2 {
-    font-size: 32px;
-    margin-bottom: 5px;
-    color: #000000;
-}
-
-.contact-sub {
-    color: #000000;
-    margin-bottom: 25px;
-    font-size: 15px;
-}
-
-/* Input Groups */
-.contact-form .form-group {
-    text-align: left;
-    margin-bottom: 18px;
-}
-
-.contact-form label {
-    font-size: 14px;
-    color: #000000;
-    display: block;
-    margin-bottom: 6px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-
-    background: rgba(255,255,255,0.25);
-    color: #000000;
-
-    border: 1px solid rgba(255,255,255,0.4);
-    font-size: 14px;
-}
-
-/* Button */
-.btn-submit {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-
-    background: linear-gradient(135deg, #ff6a00, #ee0979);
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-
-    transition: 0.3s;
-}
-
-.btn-submit:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
-/* Fade Animation */
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive */
-@media(max-width: 600px) {
-    .contact-glass {
-        width: 90%;
-    }
 }
