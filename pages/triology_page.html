@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Trilogy Overview</title>
@@ -7,10 +8,14 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<div id="navbar-container"></div>
+
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
     <script>
         fetch("navbar.html")
             .then(res => res.text())
@@ -18,288 +23,350 @@
     </script>
 
 
-<div class="container">
+    <div class="container">
 
-    <!-- Radio Tabs (Hidden) -->
-    <input type="radio" name="book-tab" id="default" checked>
-    <input type="radio" name="book-tab" id="book1">
-    <input type="radio" name="book-tab" id="book2">
-    <input type="radio" name="book-tab" id="book3">
+        <!-- RADIO TABS -->
+        <input type="radio" name="book-tab" id="default" checked>
+        <input type="radio" name="book-tab" id="book1">
+        <input type="radio" name="book-tab" id="book2">
+        <input type="radio" name="book-tab" id="book3">
 
+        <!-- LEFT PANEL -->
+        <div class="left-panel">
 
-    <!-- LEFT COLUMN -->
-    <div class="left-panel">
+            <label for="book1" class="book-option">
+                <img src="../assets/strategy.jpg" class="tilted">
+                <div class="book-name">A Startup Founder’s Guide to the Art of War</div>
+            </label>
 
-        <label for="book1" class="book-option">
-            <img src="../assets/strategy.jpg" class="tilted">
-            <div class="book-name">A Startup Founder’s Guide to the Art of War</div>
-        </label>
+            <label for="book2" class="book-option">
+                <img src="../assets/design.jpg" class="tilted">
+                <div class="book-name">Design a Better Business: An Entrepreneurship Fable</div>
+            </label>
 
-        <label for="book2" class="book-option">
-            <img src="../assets/design.jpg" class="tilted">
-            <div class="book-name">Design a Better Business: An Entrepreneurship Fable</div>
-        </label>
+            <label for="book3" class="book-option">
+                <img src="../assets/book3.jpg" class="tilted">
+                <div class="book-name">Execution Warfare: The Founder's Operating System</div>
+            </label>
 
-        <label for="book3" class="book-option">
-            <img src="../assets/strategy.jpg" class="tilted">
-            <div class="book-name">Execution Warfare: The Founder's Operating System</div>
-        </label>
+        </div>
 
-    </div>
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
 
-    <!-- RIGHT COLUMN -->
-    <div class="right-panel">
-        <!-- DEFAULT CONTENT -->
-        <div class="book-content" id="default-content">
-            <h1>The Startup Trilogy</h1>
-            <p class="tagline">Three books. One journey—from strategy → design → execution.</p>
+            <!-- DEFAULT CONTENT -->
+            <div class="book-content" id="default-content">
 
-            <h2>The Three Books</h2>
-            <div class="default-books">
-                <img src="../assets/strategy.jpg">
-                <img src="../assets/design.jpg">
-                <img src="../assets/strategy.jpg">
-            </div>
-            <p class="overview-text">
-                The Startup Trilogy is a comprehensive guide for founders navigating the complex journey of building a successful startup. 
-                It consists of three interconnected books that cover the essential aspects of startup development: strategy, design, and execution.
-            </p>
-                <br>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, minus voluptates! Alias, esse ipsum nobis iste consequuntur, maiores quibusdam corrupti ad deserunt quis fugit rem, sed deleniti autem molestiae enim.</p>
-                
-                <br>
-            <p>
-                ste officia error accusantium similique laborum! Ex quia consequuntur dicta natus vitae. Esse asperiores pariatur sit dolores, odit reiciendis doloribus fugit eius, voluptatum minima amet ut eligendi inventore accusamus repudiandae?
-                Aliquid error blanditiis unde. Velit minus labore eum aut rerum dolore inventore eos, laboriosam, modi mollitia officia hic repellat minima veritatis fugiat porro aliquid ex omnis sint ipsa. Sed, repellat.
-                Illum vero quisquam blanditiis reprehenderit. Laudantium corporis vitae alias saepe error asperiores est sapiente quidem assumenda, reiciendis quas odit aspernatur pariatur facilis dolor dolores iusto! Adipisci eaque esse architecto obcaecati.
-            </p>
-                
-                
+                <h1>The Startup Trilogy</h1>
+                <p class="tagline">Three books. One journey—from strategy → design → execution.</p>
 
-            <!-- ROADMAP -->
-            <h2>Roadmap</h2>
-            <div class="roadmap-container">
-
-                <!-- STEP 1 -->
-                <div class="roadmap-item left">
-                    <div class="roadmap-content">
-                        <h3>1. Art of War for Startups</h3>
-                        <p>Master strategic thinking for uncertain markets, competition, and chaos.</p>
+                <div class="video-section">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/iAKNFwPaAuY?rel=0&modestbranding=1"
+                            title="YouTube video" frameborder="0" allowfullscreen>
+                        </iframe>
                     </div>
-                    <img src="../assets/strategy.jpg" class="roadmap-img">
+                    <p class="video-caption">Watch: The Startup Trilogy Overview</p>
                 </div>
 
-                <!-- ARROW -->
-                <div class="roadmap-arrow dotted-curve"></div>
+                <!-- ROADMAP -->
+                <h2>Why These Three Books Work Together</h2>
 
+                <div class="roadmap-container">
 
+                    <!-- STEP 1 -->
+                    <div class="roadmap-item left">
+                        <div class="roadmap-content">
+                            <h3>Strategic Warfare</h3>
+                            <h4 class="roadmap-subtitle">Master the Art of Competitive Strategy</h4>
+                            <p class="roadmap-desc">Translate 2,500 years of military strategy into competitive
+                                positioning, resource allocation, and market dominance frameworks. </p>
 
-                <!-- STEP 2 -->
-                <div class="roadmap-item right">
-                    <img src="../assets/design.jpg" class="roadmap-img">
-                    <div class="roadmap-content">
-                        <h3>2. Design a Better Business</h3>
-                        <p>Create, test, and validate business models using design thinking tools.</p>
+                            <h5 class="roadmap-small-heading">Who This Is For:</h5>
+                            <p class="roadmap-text">Post-pivot founders who need to refine their market positioning and
+                                competitive strategy.</p>
+
+                            <h5 class="roadmap-small-heading">Key Benefits:</h5>
+                            <ul class="roadmap-list">
+                                <li>Apply ancient warfare principles to modern markets</li>
+                                <li>Learn strategic positioning and resource allocation</li>
+                                <li>Master the art of competitive intelligence</li>
+                            </ul>
+
+                            <div class="roadmap-buttons">
+                                <a href="" class="btn-primary roadmap-btn">
+                                    <img src="../assets/icons/read.svg"><span>First Chapter Free</span>
+                                </a>
+                                <a href="https://notionpress.com/in/read/a-startup-founder-s-guide-to-the-art-of-war-hardcover"
+                                    class="btn-secondary roadmap-btn white-btn">
+                                    <img src="../assets/icons/buy.svg"><span>Buy Now</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="../assets/strategy.jpg" class="roadmap-img">
                     </div>
+
+                    <div class="roadmap-arrow dotted-curve"></div>
+
+                    <!-- STEP 2 -->
+                    <div class="roadmap-item right">
+                        <img src="../assets/design.jpg" class="roadmap-img">
+                        <div class="roadmap-content">
+                            <h3>Design Warfare</h3>
+                            <h4 class="roadmap-subtitle">Build Products That Win Markets</h4>
+                            <p class="roadmap-desc">Transform strategic intent into product reality. Learn systematic
+                                approaches to product design that align with your competitive advantages.</p>
+
+                            <h5 class="roadmap-small-heading">Who This Is For:</h5>
+                            <p class="roadmap-text">Embed strategic lessons through narrative-driven design. Restructure
+                                business models that work for you, not against you.</p>
+
+                            <h5 class="roadmap-small-heading">Key Benefits:</h5>
+                            <ul class="roadmap-list">
+                                <li>Bridge the gap between strategy and execution</li>
+                                <li>Design with competitive advantage in mind</li>
+                                <li>Build products that reflect strategic positioning</li>
+                            </ul>
+
+                            <div class="roadmap-buttons">
+                                <a href="" class="btn-primary roadmap-btn">
+                                    <img src="../assets/icons/read.svg"><span>First Chapter Free</span>
+                                </a>
+                                <a href="https://notionpress.com/in/read/design-a-better-business"
+                                    class="btn-secondary roadmap-btn white-btn">
+                                    <img src="../assets/icons/buy.svg"><span>Buy Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-arrow dotted-curve flip"></div>
+
+                    <!-- STEP 3 -->
+                    <div class="roadmap-item left">
+                        <div class="roadmap-content">
+                            <h3>3. Execution Warfare</h3>
+                            <h4 class="roadmap-subtitle">Install Your Founder's Operating System</h4>
+                            <p class="roadmap-desc">The final piece. Transform your organization from strategic clarity
+                                to operational excellence through proven systems, rituals, and frameworks.</p>
+
+                            <h5 class="roadmap-small-heading">Who This Is For:</h5>
+                            <p class="roadmap-text">Replace hustle with process. Install accountability systems, meeting
+                                OS, decision logs, and scaling frameworks.</p>
+
+                            <h5 class="roadmap-small-heading">Key Benefits:</h5>
+                            <ul class="roadmap-list">
+                                <li>Install daily and weekly operating rhythms</li>
+                                <li>Build accountability without bureaucracy</li>
+                                <li>Scale execution as you scale the team</li>
+                            </ul>
+
+                            <div class="roadmap-buttons">
+                                <a href="" class="btn-primary roadmap-btn">
+                                    <img src="../assets/icons/read.svg"><span>First Chapter Free</span>
+                                </a>
+                                <a href="https://notionpress.com/author/ravi_w"
+                                    class="btn-secondary roadmap-btn white-btn">
+                                    <img src="../assets/icons/buy.svg"><span>Buy Now</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="../assets/book3.jpg" class="roadmap-img">
+                    </div>
+
                 </div>
 
-                <!-- Next Arrow -->
-                <div class="roadmap-arrow dotted-curve flip"></div>
+                <!-- BUNDLE STRIP -->
+                <h2 class="bundle-heading">Bundle Offer</h2>
 
-                <!-- STEP 3 -->
-                <div class="roadmap-item left">
-                    <div class="roadmap-content">
-                        <h3>3. Execution Warfare</h3>
-                        <p>Build systems, teams, and rhythms that scale without chaos.</p>
+                <div class="bundle-strip">
+
+                    <div class="bundle-line">
+                        Get all three books for <strong>₹1000 (Save 20%)</strong> [PaperBack]
+                        <strong>₹2250</strong> [HardCover]
                     </div>
-                    <img src="../assets/strategy.jpg" class="roadmap-img">
+
+                    <a href="https://raviwarrier.com/" class="bundle-buy">Buy Now</a>
                 </div>
 
+                <!-- BELIEF SECTION -->
+                <section class="belief-section">
+                    <h2>What I Believe</h2>
+                    <p class="belief-desc">These principles guide every framework...</p>
+
+                    <div class="belief-grid">
+                        <div class="belief-card">
+                            <img src="../assets/icons/target.svg">
+                            <h4>Strategy is Elimination</h4>
+                            <p>Focus matters...</p>
+                        </div>
+
+                        <div class="belief-card">
+                            <img src="../assets/icons/gear.svg">
+                            <h4>Systems > Heroics</h4>
+                            <p>Repeatable processes...</p>
+                        </div>
+
+                        <div class="belief-card">
+                            <img src="../assets/icons/barChart.svg">
+                            <h4>Execution is Everything</h4>
+                            <p>Do the work...</p>
+                        </div>
+
+                        <div class="belief-card">
+                            <img src="../assets/icons/shield.svg">
+                            <h4>Ancient Wisdom, Modern Warfare</h4>
+                            <p>Timeless principles...</p>
+                        </div>
+
+                        <div class="belief-card">
+                            <img src="../assets/icons/advisor.svg">
+                            <h4>It's About Them</h4>
+                            <p>Customer transformation...</p>
+                        </div>
+
+                        <div class="belief-card">
+                            <img src="../assets/icons/rocket.svg">
+                            <h4>Post-Pivot Mastery</h4>
+                            <p>Most founders fail here...</p>
+                        </div>
+                    </div>
+                </section>
+
             </div>
 
-        </div>
 
-        <!-- BOOK 1 CONTENT -->
-        <div class="book-content" id="content1">
-            <h1>A Startup Founder’s Guide to the Art of War</h1>
-            <h3 class="subtitle">A strategy playbook for founders facing high uncertainty</h3>
-            <p class="tagline">For: The founder navigating chaos, competition and the unknown</p>
+            <!-- ========================================================= -->
+            <!-- BOOK 1 CONTENT -->
+            <!-- ========================================================= -->
+            <div class="book-content" id="content1">
 
-            <img src="../assets/strategy.jpg" class="book-cover">
+                <h1>A Startup Founder’s Guide to the Art of War</h1>
+                <h3 class="subtitle">A strategy playbook for founders facing high uncertainty</h3>
+                <p class="tagline">For: The founder navigating chaos...</p>
 
-            <blockquote>“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.” <br>
-            ― Marilyn Monroe</blockquote>
+                <div class="book-hero">
+                    <blockquote>
+                        “I'm selfish, impatient and a little insecure...”
+                        <br>— Marilyn Monroe
+                    </blockquote>
+                    <img src="../assets/strategy.jpg" class="book-cover">
+                </div>
 
-            <h2>About the Book</h2>
-            <p class="about-text">
-                This book blends the timeless principles of Sun Tzu with the realities of modern startups.  
-                It helps founders make better decisions, anticipate risks, and outmaneuver competition  
-                in uncertain markets.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa adipisci itaque odit. Natus alias harum illo adipisci tempora, non distinctio molestiae itaque magnam neque ipsa? Cumque itaque aliquid voluptates.
-                Nemo, obcaecati? Magnam sequi, suscipit commodi delectus incidunt atque obcaecati aliquid quis dolorem facilis dolores asperiores? Quis iure a sit officiis id dolore, at eum sed provident expedita culpa nobis.
-                Voluptatum quam dignissimos unde mollitia nemo ratione aliquam vel sapiente distinctio! Itaque inventore eos molestias maiores officiis et facere corrupti pariatur. Dolores deleniti earum odit a fugit, maxime reprehenderit saepe.
-                Fuga, minima. Corporis dolorem aspernatur eum sed. Autem, quidem animi, fuga dolores aut vitae earum dolore distinctio eius facere voluptatem esse tempore fugiat necessitatibus vel laboriosam totam, in consequuntur atque.
-                Neque et amet eveniet odio quibusdam mollitia repellendus, eos fugit dicta! Cum earum tempora soluta maiores minima eius quas, minus aperiam consectetur accusantium deleniti molestiae. Odio iure ab asperiores culpa?
-                Consequatur mollitia excepturi error quo sit ipsa vitae sunt, quidem ab velit facere consectetur omnis optio in vel, nisi iste reiciendis deleniti quia atque voluptate ea dicta quaerat! Molestiae, maiores. <br>
-                Tempore optio cumque soluta iure aspernatur possimus quia earum consectetur explicabo nisi fugit modi error illum labore unde, omnis, ut et repudiandae corrupti. Maiores quam illo eos, autem deserunt repudiandae.
-                Expedita hic porro ratione at quaerat repudiandae, labore asperiores voluptatum ea cumque non aliquam veniam quidem iure quae deleniti dolores assumenda doloribus enim tenetur repellat eos cupiditate libero veritatis. Excepturi!
-                Error placeat quasi ut id! Quas tenetur perferendis sed. Possimus fuga velit quis quia perspiciatis nemo quod, nulla fugiat, facilis a quidem, laboriosam odio nam perferendis aliquid eos voluptas. Nobis!<br>
-                Itaque dolor similique excepturi facilis ratione quod explicabo sed quo doloremque, harum dolores delectus, vitae accusamus deleniti eligendi saepe laudantium accusantium ipsa voluptatum vel culpa expedita provident? Perspiciatis, similique accusamus?<br>
-                Fugiat eum libero a quas aliquam beatae tempora aut amet impedit quaerat ducimus nostrum, dolore cumque dicta possimus, odit, ut veniam magnam quasi. Ut cupiditate repudiandae tempore perferendis! Aliquid, veritatis.
-                Molestias nam tempora minima minus, possimus recusandae! Voluptate autem sit velit doloribus nihil quas itaque, eos dolore quam excepturi expedita quibusdam sunt odit, esse sint facere molestias. Assumenda, dolorem necessitatibus?
-                Nam dolor cumque unde eligendi deleniti quaerat asperiores nulla. Unde rerum tempore dolorum corrupti debitis autem est molestiae accusantium nisi culpa nam ducimus cum, ea deleniti voluptatem esse iste et!<br>
-                Possimus amet tempore blanditiis nam exercitationem fuga qui debitis officia dolor at! Commodi earum aperiam fugit omnis beatae laborum tempora ullam labore et voluptatum exercitationem veniam ea expedita, repellat velit!
-                Dolor beatae corrupti fugiat eius nulla similique quam quod, minima omnis? Quos corporis sint eveniet aliquid iusto libero fugiat beatae distinctio consequatur? Neque velit rerum nemo cumque itaque cum quos?<br>
-                Quod illum at quidem quasi animi voluptas optio itaque fugiat! Laudantium minus eos facere eius fugiat, illo repellendus magnam impedit deserunt dolores hic velit nemo consequatur in quaerat nam libero!
-                Natus sapiente consectetur corrupti! Nulla, doloribus quidem nihil quisquam quos natus doloremque minima nam incidunt cum ipsam repellendus temporibus consectetur, dolor ut. Assumenda ex saepe numquam accusamus, aperiam sapiente facilis!
-                Nostrum commodi tempore esse reprehenderit praesentium. Doloremque alias est pariatur tempore itaque id, ullam, dolor, animi quia molestiae doloribus illo ratione! Maxime, sit! Harum quia quis dolores maiores? Voluptates, velit!
-                Doloremque dolores at consectetur nesciunt laboriosam sapiente voluptas, sunt ab. Veniam, incidunt temporibus architecto minus quis odit iusto ipsum aperiam labore beatae aut delectus perspiciatis, nulla optio? Nesciunt, laudantium ipsa?
-                Doloribus, nulla quas? Iure voluptas eos commodi error maxime aliquam laudantium odit minus quo iusto tempora ut iste ab voluptatem voluptates aspernatur, voluptatibus totam ea sequi quibusdam! Sint, laboriosam aperiam?<br>
-                Ad error reprehenderit natus quis debitis quisquam commodi, inventore beatae tempora voluptate, ipsum esse iusto? Placeat, sit quasi. Eum qui error soluta. Aperiam modi expedita nobis molestiae provident facilis saepe.
-                Illum sint repudiandae vel dolores nam alias consequatur nesciunt ut. Optio reprehenderit sunt, harum dicta provident tempore dolore veritatis quam dolores quasi nihil! Nobis quia cum earum quo enim laborum?<br>
-                Unde praesentium harum ipsa cupiditate laborum inventore repellat totam, labore non magnam doloribus impedit error temporibus tempora aperiam? Sit nulla cumque quibusdam dignissimos nostrum laudantium doloribus. Aspernatur deleniti iure placeat!
-            </p>
+                <h2>About the Book</h2>
+                <p class="about-text">FULL BOOK TEXT HERE…</p>
 
-            <div class="buttons">
-                <a href="#" class="btn">BUY IT NOW...</a>
+                <div class="buttons">
+                    <a href="#" class="btn">BUY IT NOW...</a>
+                </div>
+
+                <!-- Praise -->
+                <div class="praise-section">
+                    <h2>Praise From the readers</h2>
+                    <p class="praise-meta">Amazon.com Top Best-Selling Book of 2012</p>
+
+                    <p class="praise-quote">“Brilliant and real and true.” <br>
+                        <span class="praise-author">—Rosanne Cash</span>
+                    </p>
+
+                    <div class="comment-section">
+                        <h2>Reader Comments</h2>
+                        <div class="comment-input-box">
+                            <textarea placeholder="Write your comment here…"></textarea>
+                            <button>Post Comment</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            
 
-            <div class="praise-section">
+            <!-- ========================================================= -->
+            <!-- BOOK 2 CONTENT -->
+            <!-- ========================================================= -->
+            <div class="book-content" id="content2">
 
-            <h2>Praise From the readers</h2>
+                <h1>Design a Better Business: An Entrepreneurship Fable</h1>
+                <h3 class="subtitle">Design thinking for building...</h3>
+                <p class="tagline">For: The founder who must turn ideas...</p>
 
-            <p class="praise-meta">Amazon.com Top Best-Selling Book of 2012</p>
-            <p class="praise-meta">Brain Pickings Best Art Books of 2012</p>
-            <p class="praise-meta">2012 Goodreads Choice Awards Nonfiction</p>
+                <div class="book-hero">
+                    <blockquote>“Quote here…”</blockquote>
+                    <img src="../assets/design.jpg" class="book-cover">
+                </div>
 
-            <p class="praise-quote">
-                “Brilliant and real and true.” <br>
-                <span class="praise-author">—Rosanne Cash</span>
-            </p>
+                <h2>About the Book</h2>
+                <p class="about-text">FULL BOOK 2 TEXT HERE…</p>
 
-            <p class="praise-quote">
-                “Immersing yourself in this book is as fine an investment in 
-                the life of your mind as you can hope to make.” <br>
-                <span class="praise-author">—The Atlantic</span>
-            </p>
+                <div class="buttons">
+                    <a href="#" class="btn">BUY IT NOW...</a>
+                </div>
 
-            <p class="praise-quote">
-                “Filled with well-formed advice that applies to nearly any kind of work.” <br>
-                <span class="praise-author">—Lifehacker.com</span>
-            </p>
+                <div class="praise-section">
+                    <h2>Praise From the readers</h2>
 
-            <p class="praise-quote">
-                “Equal parts manifesto and how-to, this book introduces readers 
-                to the idea that creative work is iterative, no idea is original 
-                and all creators and their output are a sum of inspirations 
-                and heroes…” <br>
-                <span class="praise-author">—Forbes</span>
-            </p>
+                    <p class="praise-quote">
+                        “Amazing design insights...” <br>
+                        <span class="praise-author">—Some Author</span>
+                    </p>
 
-            <p class="praise-quote">
-                “Filled with engaging anecdotes and helpful tips taken from 
-                real-world creative experience.” <br>
-                <span class="praise-author">—Fast Company</span>
-            </p>
-
-            <p class="praise-quote">
-                “Skip about 10 years of trial and error.” <br>
-                <span class="praise-author">—Christopher Moore</span>
-            </p>
-
-            <div class="comment-section">
-
-            <h2>Reader Comments</h2>
-
-            <!-- COMMENT INPUT BOX -->
-            <div class="comment-input-box">
-                <textarea placeholder="Write your comment here…"></textarea>
-                <button>Post Comment</button>
-            </div>
-            
-        </div>
-
-
-        </div>
-
-        </div>
-
-        <!-- BOOK 2 CONTENT -->
-        <div class="book-content" id="content2">
-            <h1>Design a Better Business: An Entrepreneurship Fable</h1>
-            <h3 class="subtitle">Design thinking for building the right business model</h3>
-            <p class="tagline">For: The founder who must turn ideas into validated models</p>
-
-            <img src="../assets/design.jpg" class="book-cover">
-
-            <blockquote>“Good design isn’t decoration — it’s direction.”</blockquote>
-
-            <h2>About the Book</h2>
-            <p>
-                A fable-based journey through business design, storytelling,  
-                experimentation, and model creation. Perfect for founders  
-                shaping their value proposition and customer understanding.
-            </p>
-
-            <div class="buttons">
-                <a href="#" class="btn">Buy the Book</a>
-                <a href="#" class="btn-outline">Peek Inside</a>
+                    <div class="comment-section">
+                        <h2>Reader Comments</h2>
+                        <div class="comment-input-box">
+                            <textarea placeholder="Write your comment here…"></textarea>
+                            <button>Post Comment</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <h2>If you read this book → your next is</h2>
-            <p><strong>Execution Warfare</strong> — build systems, teams and momentum.</p>
 
-            <h2>Praise from Readers</h2>
-            <div class="praise">
-                “Every founder should read this before building.”  
-            </div>
-            <div class="praise">
-                “A masterclass in simplifying complex design ideas.”  
-            </div>
+            <!-- ========================================================= -->
+            <!-- BOOK 3 CONTENT -->
+            <!-- ========================================================= -->
+            <div class="book-content" id="content3">
 
-        </div>
+                <h1>Execution Warfare: The Founder's Operating System</h1>
+                <h3 class="subtitle">Your blueprint for scaling...</h3>
+                <p class="tagline">For: The post-pivot founder...</p>
 
-        <!-- BOOK 3 CONTENT -->
-        <div class="book-content" id="content3">
-            <h1>Execution Warfare: The Founder's Operating System</h1>
-            <h3 class="subtitle">Your blueprint for scaling without chaos</h3>
-            <p class="tagline">For: The post-pivot founder struggling with growing teams & systems</p>
+                <div class="book-hero">
+                    <blockquote>“Quote here…”</blockquote>
+                    <img src="../assets/book3.jpg" class="book-cover">
+                </div>
 
-            <img src="../assets/strategy.jpg" class="book-cover">
+                <h2>About the Book</h2>
+                <p class="about-text">FULL BOOK 3 TEXT HERE…</p>
 
-            <blockquote>“Execution is not speed — it’s consistency.”</blockquote>
+                <div class="buttons">
+                    <a href="#" class="btn">BUY IT NOW...</a>
+                </div>
 
-            <h2>About the Book</h2>
-            <p>
-                This book gives founders a practical operating system  
-                to scale teams, processes, and execution rhythms.  
-                Learn how to move from firefighting to predictable growth.
-            </p>
+                <div class="praise-section">
+                    <h2>Praise From the readers</h2>
 
-            <div class="buttons">
-                <a href="#" class="btn">Buy the Book</a>
-                <a href="#" class="btn-outline">Peek Inside</a>
-            </div>
+                    <p class="praise-quote">
+                        “Execution masterpiece...” <br>
+                        <span class="praise-author">—Reviewer</span>
+                    </p>
 
-            <h2>If you read this book → your next is</h2>
-            <p><strong>Art of War</strong> — master top-level strategy.</p>
+                    <div class="comment-section">
+                        <h2>Reader Comments</h2>
+                        <div class="comment-input-box">
+                            <textarea placeholder="Write your comment here…"></textarea>
+                            <button>Post Comment</button>
+                        </div>
+                    </div>
 
-            <h2>Praise from Readers</h2>
-            <div class="praise">
-                “The execution bible for startup teams.”  
-            </div>
-            <div class="praise">
-                “Helped us scale operations without burning out.”  
+                </div>
             </div>
 
-        </div>
+        </div> <!-- END RIGHT PANEL -->
 
-    </div>
+    </div> <!-- END CONTAINER -->
 
-</div>
-<div id="footer-container"></div>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
     <script>
         fetch("footer.html")
             .then(res => res.text())
@@ -307,4 +374,5 @@
     </script>
 
 </body>
+
 </html>

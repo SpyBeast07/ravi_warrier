@@ -1,4 +1,23 @@
 @import url("global.css");
+
+.assessment-hero {
+  text-align: center;
+  margin: 0 auto;
+  padding: 60px var(--space-32) 120px;
+}
+
+.assessment-hero h1 {
+  font-size: var(--h1);
+  margin-bottom: 12px;
+}
+
+.hero-desc {
+  font-size: 18px;
+  color: var(--gray-700);
+  max-width: 700px;
+  margin: 0 auto; /* FIX: center width */
+}
+
 .search-filter-bar {
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +50,7 @@
 .insta-feed .main-heading {
     text-align: center;
     font-size: 30px;
+    margin-top: 60px;
     margin-bottom: 20px;
     font-family: Roboto, sans-serif;
     color: #333;

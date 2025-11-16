@@ -1,29 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessment</title>
-    <link rel="stylesheet" href="../styles/assessment.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Assessment</title>
+  <link rel="stylesheet" href="../styles/assessment.css">
 </head>
+
 <body>
-    <div id="navbar-container"></div>
-    <script>
-        fetch("navbar.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("navbar-container").innerHTML = data);
-    </script>
+
+  <!-- NAVBAR -->
+  <div id="navbar-container"></div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar-container").innerHTML = data);
+  </script>
 
 
-    <!-- FOOTER -->
-    <div id="footer-container"></div>
-    <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then(
-          (data) =>
-            (document.getElementById("footer-container").innerHTML = data)
-        );
-    </script>
+  <!-- ============================ -->
+  <!--        HERO SECTION          -->
+  <!-- ============================ -->
+
+  <section class="assessment-hero container">
+    <!-- SMALL EYEBROW -->
+    <p class="eyebrow" style="text-align:center; margin-top:60px;">Startup Assessment</p>
+
+    <h1>Find your blind spots</h1>
+    <p class="hero-desc">
+      An AI-powered assessment that evaluates your Strategy, Design, and Execution.<br>
+      Get a radar chart of your gaps and a personalized roadmap.
+    </p>
+  </section>
+
+
+  <!-- ============================ -->
+  <!--         FEATURE CARDS        -->
+  <!-- ============================ -->
+
+  <section class="assessment-features container">
+
+    <div class="feat-grid">
+
+      <div class="feat-card card">
+        <img src="../assets/icons/strategy.svg" class="feat-icon">
+        <h3>Strategy</h3>
+        <p>Are you seeing terrain others miss? Do you have asymmetric advantages?</p>
+      </div>
+
+      <div class="feat-card card">
+        <img src="../assets/icons/design.svg" class="feat-icon">
+        <h3>Design</h3>
+        <p>Have you designed the business model, not just the product?</p>
+      </div>
+
+      <div class="feat-card card">
+        <img src="../assets/icons/execution.svg" class="feat-icon">
+        <h3>Execution</h3>
+        <p>Do you have rituals and cadence that create real momentum?</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================ -->
+  <!--         ASSESSMENT BOX       -->
+  <!-- ============================ -->
+
+  <section class="assessment-box">
+
+    <div id="assessment-card" class="assessment-card card">
+
+      <!-- CONTENT FILLED BY JS -->
+    </div>
+
+  </section>
+
+
+
+  <!-- ============================ -->
+  <!--      WHAT YOU'LL DISCOVER    -->
+  <!-- ============================ -->
+
+  <section class="discover container">
+
+    <h2>What You'll Discover</h2>
+
+    <div class="discover-grid">
+
+      <div class="discover-card card">
+        <h3>Your Execution Health Score</h3>
+        <p>A personalized assessment of where you stand on key execution metrics.</p>
+      </div>
+
+      <div class="discover-card card">
+        <h3>Specific Bottlenecks</h3>
+        <p>2–3 key findings about where your execution is breaking down.</p>
+      </div>
+
+      <div class="discover-card card">
+        <h3>Book Recommendations</h3>
+        <p>Which parts of the trilogy will help solve your specific challenges.</p>
+      </div>
+
+      <div class="discover-card card">
+        <h3>Community Access</h3>
+        <p>Join our Discord to discuss your results with other founders.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-container").innerHTML = data);
+  </script>
+
+  <script src="../scripts/assessment.js"></script>
 </body>
+
 </html>

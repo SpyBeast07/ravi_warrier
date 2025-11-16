@@ -2,93 +2,111 @@
 
 /* HERO */
 .about-hero {
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 40px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 60px var(--space-32) 120px;
 }
 
 .about-hero h1 {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .about-photo {
-    width: 240px;
-    height: 240px;
-    border-radius: 18px;
-    object-fit: cover;
-    box-shadow: var(--shadow-subtle);
+  width: 240px;
+  height: 240px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: var(--shadow-subtle);
 }
 
 /* STORY SECTION */
 .about-story {
-    max-width: 850px;
-    margin: 60px auto;
+  max-width: 850px;
+  margin: 60px auto;
 }
 
 .about-story p {
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: var(--gray-700);
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--gray-700);
 }
 
 .about-story ul,
 .about-story ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .about-story li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /* EXPERIENCE */
 .experience {
-    text-align: center;
-    padding-top: var(--space-96);
-    padding-bottom: var(--space-96);
+  text-align: center;
+  padding-top: var(--space-96);
+  padding-bottom: var(--space-96);
 }
 
 .exp-grid {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
 
 .exp-card {
-    text-align: left;
+  text-align: center;
+  padding-top: 40px; /* spacing above icon */
+}
+
+.exp-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 .exp-card h3 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 /* PHILOSOPHY */
 .philosophy {
-    padding-top: var(--space-96);
-    padding-bottom: var(--space-96);
-    justify-content: center;
+  padding-top: var(--space-96);
+  padding-bottom: var(--space-96);
+}
+
+.philosophy.card {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .philosophy p {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 /* CTA */
 .about-cta {
-    padding-top: var(--space-96);
-    padding-bottom: var(--space-96);
+  padding-top: var(--space-96);
+  padding-bottom: var(--space-96);
+}
+
+.about-cta h2 {
+  text-align: center !important;
+  margin-bottom: var(--space-48);
 }
 
 .cta-buttons {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .experience h2,
 .philosophy h2,
 .about-cta h2 {
-    margin-bottom: var(--space-48);
+  margin-bottom: var(--space-48);
 }

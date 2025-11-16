@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work With Me</title>
     <link rel="stylesheet" href="../styles/workwithme.css">
 </head>
+
 <body>
     <div id="navbar-container"></div>
     <script>
@@ -14,16 +16,98 @@
             .then(data => document.getElementById("navbar-container").innerHTML = data);
     </script>
 
+    <!-- MAIN CONTENT -->
+    <section class="assessment-hero container">
+        <!-- SMALL EYEBROW -->
+        <p class="eyebrow" style="text-align:center; margin-top:60px;">Work With Me</p>
+
+        <h1>Work With Me</h1>
+        <p class="hero-desc">
+            Whether you need quick clarity or comprehensive transformation,<br>
+            I'm here to help.
+        </p>
+    </section>
+
+    <section class="work-container container">
+
+        <!-- 3-COLUMN GRID -->
+        <div class="work-grid">
+
+            <!-- ITEM 1 -->
+            <div class="work-card card">
+                <h3 class="work-heading">Strategy Audit</h3>
+                <p class="work-price">₹25,000</p>
+
+                <p class="work-desc">
+                    90-minute deep dive into your strategic positioning, competitive
+                    landscape, and immediate execution priorities.
+                </p>
+
+                <ul class="work-list">
+                    <li>Pre-session strategic questionnaire</li>
+                    <li>Competitive positioning analysis</li>
+                    <li>Actionable 30-day roadmap</li>
+                    <li>Recording + written summary</li>
+                </ul>
+
+                <a href="../pages/contact.html" class="btn-primary work-btn">Book Strategy Audit</a>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="work-card card">
+                <h3 class="work-heading">System Execution Sprint</h3>
+                <p class="work-price">₹1,50,000</p>
+
+                <p class="work-desc">
+                    4-week intensive to implement the complete Founder's OS in your
+                    startup. Transform chaos into systems.
+                </p>
+
+                <ul class="work-list">
+                    <li>Weekly 2-hour implementation sessions</li>
+                    <li>Custom framework adaptation</li>
+                    <li>Team alignment workshops</li>
+                    <li>Metrics dashboard setup</li>
+                    <li>30-day post-program support</li>
+                </ul>
+
+                <a href="../pages/contact.html" class="btn-primary work-btn">System Execution Sprint</a>
+            </div>
+
+            <!-- ITEM 3 (EMPTY SLOT / OPTIONAL) -->
+            <div class="work-card card">
+                <h3 class="work-heading">Advisory Retainer</h3>
+                <p class="work-price">₹3,00,000/quarter</p>
+
+                <p class="work-desc">
+                    Ongoing strategic partnership for founders serious about systematie dominance.
+                </p>
+
+                <ul class="work-list">
+                    <li> Bi-weekly 1:1 strategy sessions</li>
+                    <li>Unlimited asyne support</li>
+                    <li>Board deck review & coaching</li>
+                    <li>Investor pitch preparation</li>
+                    <li>30-day post-program supportLeadership team workshops</li>
+                    <li>Priority access to new frameworks</li>
+                </ul>
+
+                <a href="../pages/contact.html" class="btn-primary work-btn">Discuss Advisory</a>
+            </div>
+        </div>
+
+    </section>
 
     <!-- FOOTER -->
     <div id="footer-container"></div>
     <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then(
-          (data) =>
-            (document.getElementById("footer-container").innerHTML = data)
-        );
+        fetch("footer.html")
+            .then((res) => res.text())
+            .then(
+                (data) =>
+                    (document.getElementById("footer-container").innerHTML = data)
+            );
     </script>
 </body>
+
 </html>

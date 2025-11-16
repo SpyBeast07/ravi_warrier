@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../styles/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../styles/contact.css">
 </head>
+
 <body>
-    <div id="navbar-container"></div>
-    <script>
-        fetch("navbar.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("navbar-container").innerHTML = data);
-    </script>
+  <div id="navbar-container"></div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar-container").innerHTML = data);
+  </script>
 
+  <section class="assessment-hero container">
+    <!-- SMALL EYEBROW -->
+    <p class="eyebrow" style="text-align:center; margin-top:60px;">Contact Me</p>
 
+    <h1>Get in Touch</h1>
+    <p class="hero-desc">
+      I'd love to hear from you. Let's start a conversation.
+    </p>
+  </section>
 
-    <!-- FOOTER -->
-    <div id="footer-container"></div>
-    <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then(
-          (data) =>
-            (document.getElementById("footer-container").innerHTML = data)
-        );
-    </script>
+  <div class="contact-grid">
+
+    <!-- LEFT FORM CARD -->
+    <div class="contact-card form-card">
+      <form class="contact-form">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your full name">
+
+        <label>Email Address</label>
+        <input type="email" placeholder="you@example.com">
+
+        <label>Your Concern</label>
+        <textarea placeholder="Tell me what's on your mind..."></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- RIGHT SIDE CARDS -->
+    <div class="right-cards">
+
+      <div class="contact-card small-card">
+        <img src="../assets/icons/mail.svg" class="info-icon">
+        <h3>Direct Contact</h3>
+        <p class="contact-info-text">contact@raviwarrier.com</p>
+      </div>
+
+      <div class="contact-card small-card">
+        <img src="../assets/icons/linkedin.svg" class="info-icon">
+        <h3>Connect</h3>
+        <a href="https://www.linkedin.com/in/raviwarrier" target="_blank" class="contact-info-text link">
+          LinkedIn Profile
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+  <script>
+    fetch("footer.html")
+      .then((res) => res.text())
+      .then(
+        (data) =>
+          (document.getElementById("footer-container").innerHTML = data)
+      );
+  </script>
 </body>
+
 </html>

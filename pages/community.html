@@ -1,31 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community</title>
     <link rel="stylesheet" href="../styles/community.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="navbar-container"></div>
     <script>
-      fetch("navbar.html")
-        .then((res) => res.text())
-        .then(
-          (data) =>
-            (document.getElementById("navbar-container").innerHTML = data)
-        );
+        fetch("navbar.html")
+            .then((res) => res.text())
+            .then(
+                (data) =>
+                    (document.getElementById("navbar-container").innerHTML = data)
+            );
     </script>
+
+    <!-- main body -->
+    <div class="community-wrapper">
+
+        <!-- SMALL EYEBROW -->
+        <p class="eyebrow" style="text-align:center; margin-top:60px;">Community</p>
+
+        <!-- MAIN HEADING -->
+        <h1 class="community-title" style="text-align:center;">
+            You don't improve alone
+        </h1>
+
+        <!-- DESCRIPTION -->
+        <p class="community-desc" style="text-align:center;">
+            Most founder communities are networking events. This is a practice <br>
+            community. We work on real problems together.
+        </p>
+
+        <!-- IMAGE -->
+        <div class="community-image-wrap">
+            <img src="../assets/community.jpg" class="community-image">
+        </div>
+
+        <!-- BLACK FEATURE CARD -->
+        <div class="black-card">
+            <h2>What makes this different</h2>
+            <p>
+                This isn't a place to promote your startup or collect followers.
+                <br>
+                It's where founders who value clarity come to practice-with me and with each other.<br>We look at real
+                decks, real landing pages, real go-to-market plans. We tear them down, ask hard questions, and
+                rebuild them stronger. <br>The goal isn't to be comfortable. The goal is to get better.
+            </p>
+
+            <a href="#" class="btn-primary full-btn">Join Discord Community</a>
+        </div>
+
+        <!-- PRICING STRIP -->
+        <div class="price-strip">
+            Free for Trilogy readers &nbsp; | &nbsp; ₹499/year for others
+        </div>
+
+        <!-- FIRST WIDGET ROW — LOGO CARDS -->
+        <div class="widget-grid logos-row">
+
+            <div class="widget-card">
+                <img src="../assets/icons/speechBubbleSquare.svg" class="widget-icon" />
+                <h3>Weekly AMAs</h3>
+                <p>Ask me anything about strategy, design, or execution. Real questions, real answers, no fluff.</p>
+            </div>
+
+            <div class="widget-card">
+                <img src="../assets/icons/advisor.svg" class="widget-icon" />
+                <h3>Teardown Sessions</h3>
+                <p>Submit your landing page, pitch deck, or go-to-market plan. We'll tear it down together and rebuild
+                    it better.</p>
+            </div>
+
+            <div class="widget-card">
+                <img src="../assets/icons/calendar.svg" class="widget-icon" />
+                <h3>Practice Circles</h3>
+                <p>Small groups of founders practicing the frameworks together. Accountability and peer feedback.</p>
+            </div>
+
+        </div>
+
+        <!-- WIDGET CARDS (your screenshot row 2) -->
+        <div class="widget-grid">
+
+            <div class="widget-card">
+                <img src="../assets/icons/speechBubbleRound.svg" class="widget-icon" />
+                <h3>Expert Q&A Sessions</h3>
+                <p>Regular sessions with Ravi and guest operators to refine your execution systems.</p>
+            </div>
+
+            <div class="widget-card">
+                <img src="../assets/icons/wrench.svg" class="widget-icon" />
+                <h3>Implementation Support </h3>
+                <p>Get help applying OS frameworks to your specific context.</p>
+            </div>
+
+            <div class="widget-card">
+                <img src="../assets/icons/educator.svg" class="widget-icon" />
+                <h3>Framework <br>Library</h3>
+                <p>Exclusive access to templates, decision matrices, and execution tools.</p>
+            </div>
+
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="testimonials">
+            <h2>What founders are saying</h2>
+
+            <div class="testi-grid">
+
+                <div class="testi-card">
+                    <p>
+                        "This community helped me install the operating<br>
+                        rhythms I've been missing. The accountability alone<br>
+                        is worth 10x the price."
+                    </p>
+                    <span class="testi-author">— Sarah K., SaaS Founder</span>
+                </div>
+
+                <div class="testi-card">
+                    <p>
+                        "Finally, a group of founders who understand that<br>
+                        execution is strategy. The weekly check-ins keep me<br>
+                        sharp."
+                    </p>
+                    <span class="testi-author">— Marcus T., B2B Startup</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- FOOTER -->
     <div id="footer-container"></div>
     <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then(
-          (data) =>
-            (document.getElementById("footer-container").innerHTML = data)
-        );
+        fetch("footer.html")
+            .then((res) => res.text())
+            .then(
+                (data) =>
+                    (document.getElementById("footer-container").innerHTML = data)
+            );
     </script>
-  </body>
+</body>
+
 </html>

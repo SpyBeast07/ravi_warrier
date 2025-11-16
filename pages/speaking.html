@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speaking</title>
     <link rel="stylesheet" href="../styles/speaking.css">
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <div id="navbar-container"></div>
     <script>
         fetch("navbar.html")
@@ -14,17 +18,124 @@
             .then(data => document.getElementById("navbar-container").innerHTML = data);
     </script>
 
-    
+    <!-- MAIN CONTENT -->
+    <section class="assessment-hero container">
+        <!-- SMALL EYEBROW -->
+        <p class="eyebrow" style="text-align:center; margin-top:60px;">Speaking</p>
+
+        <h1>Let's Talk Strategy & Execution</h1>
+        <p class="hero-desc">
+            Available for speaking engagements, workshops, and strategic consulting.
+        </p>
+    </section>
+
+    <!-- INQUIRY FORM -->
+    <section class="container inquiry-section">
+        <p class="sub-description">
+            I speak at conferences, company offsites, and founder gatherings. <br>
+            These aren't motivational speeches—they're practical frameworks your team can use immediately.
+        </p>
+        <form class="inquiry-form card">
+            <h2 class="form-title">Speaking Inquiry Form</h2>
+            <div class="form-group">
+                <label>Name *</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Company / Organization</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Topic of Interest</label>
+                <select>
+                    <option disabled selected>Select a topic</option>
+                    <option>Strategy Under Uncertainty</option>
+                    <option>Business Design, Not Just Product Design</option>
+                    <option>The Founder Execution OS</option>
+                </select>
+            </div>
+
+            <div class="form-group full">
+                <label>Message *</label>
+                <textarea placeholder="Tell me about your event, audience size, and what you're hoping to achieve ..."
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">Send Inquiry</button>
+        </form>
+    </section>
+
+    <!-- SPEAKING TOPICS -->
+    <section class="container speaking-topics-section">
+
+        <div class="topics-header">
+            <img src="../assets/icons/speechBubbleSquare.svg" class="topic-icon">
+            <h2>Speaking Topics</h2>
+        </div>
+
+        <div class="topics-list">
+
+            <div class="topic-card card-light">
+                <h3>Strategy Under Uncertainty</h3>
+                <p>
+                    How to find asymmetric advantages when you're outgunned and outspent.
+                    Real frameworks for reading terrain, timing moves, and creating leverage.
+                </p>
+            </div>
+
+            <div class="topic-card card-light">
+                <h3>Business Design, Not Just Product Design</h3>
+                <p>
+                    Most teams design the product but ignore the business model, pricing,
+                    and go-to-market. Learn how to design the entire system.
+                </p>
+            </div>
+
+            <div class="topic-card card-light">
+                <h3>The Founder Execution OS</h3>
+                <p>
+                    Clarity without momentum is theory. Build the rituals, cadence, and systems
+                    that turn strategy into results.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LOGISTICS -->
+    <section class="container logistics-section">
+        <div class="topics-header">
+            <img src="../assets/icons/format.svg" class="topic-icon">
+            <h2>Format & Logistics</h2>
+        </div>
+
+        <div class="card logistics-card">
+            <p><strong>Keynotes:</strong> 45–60 minutes with Q&A. Best for conferences or large company events.</p>
+
+            <p><strong>Workshops:</strong> Half-day or full-day sessions. Your team brings real challenges, we work
+                through them together.</p>
+
+            <p><strong>Founder Circles:</strong> Intimate group of 10–20 founders. More discussion, less
+                presentation.</p>
+        </div>
+    </section>
+
 
     <!-- FOOTER -->
     <div id="footer-container"></div>
     <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then(
-          (data) =>
-            (document.getElementById("footer-container").innerHTML = data)
-        );
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-container").innerHTML = data);
     </script>
+
 </body>
+
 </html>

@@ -1,1 +1,161 @@
 @import url("global.css");
+
+/* UNIVERSAL SECTION SPACING — slightly tighter */
+section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* HERO */
+.assessment-hero {
+  text-align: center;
+  margin: 0 auto;
+  padding: 60px var(--space-32) 120px;
+}
+
+.assessment-hero h1 {
+  font-size: var(--h1);
+  margin-bottom: 12px;
+}
+
+.hero-desc {
+  font-size: 18px;
+  color: var(--gray-700);
+  max-width: 700px;
+  margin: 0 auto; /* FIX: center width */
+}
+
+/* FEATURE CARDS */
+.assessment-features {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.feat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px; /* tightened */
+}
+
+.feat-card {
+  text-align: center;
+}
+
+.feat-card img {
+  width: 46px;
+  margin-bottom: 14px;
+}
+
+.feat-card h3 {
+  margin-bottom: 8px;
+}
+
+/* ASSESSMENT QUESTION BOX */
+.assessment-box {
+  padding-top: 64px;
+  padding-bottom: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.assessment-card {
+  width: 650px;
+  max-width: 92%;
+  margin: 0 auto;
+}
+
+.assessment-card h2 {
+  margin-bottom: 16px;
+}
+
+.assessment-card .q-counter {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-500);
+  margin-bottom: 10px;
+}
+
+.assessment-card .question {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--btn-radius);
+  border: 1px solid var(--gray-300);
+  margin-bottom: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+  background: var(--white);
+}
+
+.option-btn:hover {
+  background: var(--gray-100);
+  transform: translateY(-2px);
+}
+
+/* RESULTS */
+.result-box {
+  padding: 18px;
+  background: var(--video-light-blue);
+  border-left: 4px solid var(--blue);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.result-box h3 {
+  margin-bottom: 6px;
+}
+
+/* CTA buttons */
+.result-cta {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.start-over {
+  cursor: pointer;
+  margin-top: 16px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+/* DISCOVER */
+.discover {
+  padding-top: 72px;
+  padding-bottom: 96px;
+  text-align: center; /* FIX: center title */
+}
+
+.discover h2 {
+  text-align: center; /* double guarantee */
+}
+
+.discover-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px; /* reduced */
+}
+
+.discover-card {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .feat-grid,
+  .discover-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -39,6 +39,37 @@
   gap: 18px;
 }
 
+/* HERO Buttons */
+.hero-cta .btn {
+    padding: 14px 26px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Primary Blue Button */
+.btn-primary {
+    background: var(--blue);
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--blue-dark);
+    transform: translateY(-3px);
+}
+
+/* Secondary White Button */
+.btn-secondary {
+    background: white;
+    color: var(--ink);
+    border: 2px solid var(--gray-300);
+}
+
+.btn-secondary:hover {
+    background: var(--gray-100);
+    transform: translateY(-3px);
+}
+
 /* ---------- Mobile Responsive ---------- */
 
 @media (max-width: 768px) {
