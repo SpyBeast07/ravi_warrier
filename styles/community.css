@@ -39,7 +39,7 @@
   max-height: 600px;
   max-width: 900px;
   border-radius: 12px;
-  border: 5px solid white;
+  border: 15px solid white;
   box-shadow: var(--shadow-subtle);
   object-fit: cover;
 }
@@ -67,11 +67,15 @@
   line-height: 1.6;
 }
 
+.black-card-text {
+  margin-bottom: var(--space-8);
+}
+
 /* Convert join button into btn-secondary (white outline) */
 .black-card .full-btn {
-  background: transparent;
-  color: var(--ink);
-  border: 2px solid var(--gray-300);
+  background: var(--blue);
+  color: var(--white);
+  
   border-radius: var(--btn-radius);
   padding: 14px;
   text-decoration: none;
@@ -80,11 +84,14 @@
   text-align: center;
   font-weight: 600;
   transition: .2s ease;
+  margin-top: 18px;
 }
 
 .black-card .full-btn:hover {
   background: var(--gray-100);
   transform: translateY(-3px);
+  color: var(--ink);
+  border: 2px solid var(--gray-300);
 }
 
 /* PRICE STRIP */
