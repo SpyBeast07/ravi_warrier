@@ -1,17 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About — Ravi Warrier</title>
     <link rel="stylesheet" href="../styles/about.css">
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <div id="navbar-container"></div>
     <script>
         fetch("navbar.html")
             .then(res => res.text())
             .then(data => document.getElementById("navbar-container").innerHTML = data);
     </script>
+
+    <!-- ===========================
+        ABOUT — HERO
+    ============================ -->
+    <section class="about-hero container">
+        <h1>I help founders make fewer,<br>better decisions.</h1>
+
+        <img src="../assets/ravi.jpg" alt="Ravi Warrier" class="about-photo">
+    </section>
+
+
+    <!-- ===========================
+        ABOUT — STORY CONTENT
+    ============================ -->
+    <section class="about-story container">
+
+        <p>
+            You're not just a founder; you're a strategist navigating chaos. I'm Ravi Warrier, and my mission is to translate
+            timeless strategic principles into actionable systems for founders like you.
+        </p>
+
+        <p>
+            I'm not a guru. I'm a founder-educator who spent decades learning what separates startups that scale from those
+            that collapse under their own ambition. My work sits at the intersection of ancient strategy and modern execution
+            science—blending Sun Tzu’s military wisdom with the operating principles used by elite companies today.
+        </p>
+
+        <p>
+            My journey began with a deep fascination for <em>The Art of War</em> — not as ancient history, but as a living
+            framework for competitive advantage. The same principles that shaped wars 2,500 years ago still shape markets
+            today. Over the years, I realized that founders don’t fail because of talent or effort. They fail because they are:
+        </p>
+
+        <ul>
+            <li>solving the wrong problems</li>
+            <li>in the wrong order</li>
+            <li>using the wrong frameworks</li>
+        </ul>
+
+        <p>
+            <strong>Strategy</strong> is about seeing terrain others miss and making moves that create asymmetric advantage.<br>
+            <strong>Design</strong> is about shaping business models and go-to-market motion before writing a line of code.<br>
+            <strong>Execution</strong> is where most teams collapse—clarity without cadence becomes theory.
+        </p>
+
+        <p>
+            I spent the better part of two decades working with founders who operate under impossible constraints. Through
+            this work emerged <strong>The Founder’s Trilogy</strong>—a complete operating system from strategy → design →
+            execution. Every principle and template is tested with real founders navigating real complexity.
+        </p>
+
+        <p>Today, my work extends across:</p>
+
+        <ul>
+            <li>Authoring The Founder’s Trilogy</li>
+            <li>Educating at IIM Bangalore’s NSRCEL and startup ecosystems across India</li>
+            <li>Mentoring post-pivot and scaling-stage founders</li>
+            <li>Building decision frameworks that replace instinct with systems</li>
+            <li>Translating strategic intent into operating cadences</li>
+        </ul>
+
+        <p>I support founders through three formats:</p>
+
+        <ol>
+            <li><strong>The Assessment</strong> — uncover blind spots in strategy, design, & execution</li>
+            <li><strong>The Community</strong> — practice with peers</li>
+            <li><strong>Speaking & Workshops</strong> — bring systems to your team</li>
+        </ol>
+
+        <p>
+            My work isn’t about writing books. It’s about helping you build the clarity, discipline, and operating rhythm
+            required to win your market—systematically, not accidentally.
+        </p>
+    </section>
+
+
+    <!-- ===========================
+        BUILT ON REAL EXPERIENCE
+    ============================ -->
+    <section class="experience container">
+
+        <h2>Built on Real Experience</h2>
+
+        <div class="exp-grid">
+
+            <div class="exp-card card">
+                <h3>Author & Educator</h3>
+                <p>Professor teaching strategy and execution at leading institutions.</p>
+            </div>
+
+            <div class="exp-card card">
+                <h3>Venture Builder</h3>
+                <p>Founder of Impress Every Investor and Funding Pitchcraft.</p>
+            </div>
+
+            <div class="exp-card card">
+                <h3>Trusted Advisor</h3>
+                <p>Helping hundreds of founders install systematic execution.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+        THE PHILOSOPHY
+    ============================ -->
+    <section class="philosophy container card">
+        <h2>The Philosophy</h2>
+
+        <p><strong>Strategy is worthless without execution.</strong> Too many founders have brilliant strategies that die in the
+            chaos of daily operations.</p>
+
+        <p><strong>Execution is impossible without systems.</strong> You can't will yourself to better execution. You need
+            frameworks, rituals, and rhythms.</p>
+
+        <p><strong>Systems scale, heroics don't.</strong> The goal isn't to work harder. It's to install an operating system that
+            runs whether you're in the room or not.</p>
+    </section>
+
+
+    <!-- ===========================
+        FINAL CTA — TRANSFORM?
+    ============================ -->
+    <section class="about-cta container">
+
+        <h2>Ready to Transform Your Execution?</h2>
+
+        <div class="cta-buttons">
+            <a href="../pages/assessment.html" class="btn-primary btn">Assess Your Execution Gap</a>
+            <a href="../pages/triology_page.html" class="btn-secondary btn">Explore The Trilogy</a>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+    <script>
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-container").innerHTML = data);
+    </script>
+
 </body>
+
 </html>
