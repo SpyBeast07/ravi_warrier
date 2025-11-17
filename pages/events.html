@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <link rel="stylesheet" href="../styles/event.css">
-    
+
 </head>
+
 <body>
     <div id="navbar-container"></div>
-  <script>
-    fetch("navbar.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("navbar-container").innerHTML = data);
-  </script>
+    <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data);
+    </script>
 
     <main class="event-page">
 
@@ -50,7 +52,7 @@
         <section class="event-list">
 
             <div class="event-card recent">
-                <img src="../assets/event1.jpg" alt="Event 1">
+                <img src="../assets/ravi.jpg" alt="Event 1">
                 <h3>Strategic Decision-Making for Early Founders</h3>
                 <p class="event-meta">Feb 10, 2025 • Bengaluru, India</p>
                 <p class="event-desc">
@@ -61,7 +63,7 @@
             </div>
 
             <div class="event-card past">
-                <img src="../assets/event2.jpg" alt="Event 2">
+                <img src="../assets/ravi.jpg" alt="Event 2">
                 <h3>Execution Rituals for Scaling Teams</h3>
                 <p class="event-meta">Jan 18, 2025 • Online Session</p>
                 <p class="event-desc">
@@ -72,7 +74,7 @@
             </div>
 
             <div class="event-card recent">
-                <img src="../assets/event3.jpg" alt="Event 3">
+                <img src="../assets/ravi.jpg" alt="Event 3">
                 <h3>Designing a High-Conversion Landing Page</h3>
                 <p class="event-meta">Dec 28, 2024 • Mumbai, India</p>
                 <p class="event-desc">
@@ -88,15 +90,16 @@
 
     <script src="../scripts/event.js"></script>
 
-  <!-- FOOTER -->
-  <div id="footer-container"></div>
-  <script>
-    fetch("footer.html")
-      .then((res) => res.text())
-      .then(
-        (data) =>
-          (document.getElementById("footer-container").innerHTML = data)
-      );
-  </script>
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+    <script>
+        fetch("footer.html")
+            .then((res) => res.text())
+            .then(
+                (data) =>
+                    (document.getElementById("footer-container").innerHTML = data)
+            );
+    </script>
 </body>
+
 </html>

@@ -2,6 +2,7 @@
 
 /* HERO */
 .about-hero {
+  max-width: 900px !important;
   text-align: center;
   margin: 0 auto;
   padding: 60px var(--space-32) 120px;
@@ -54,6 +55,14 @@
   height: 338px;
 }
 
+.links {
+  text-decoration: none;
+}
+
+.text-color{
+  color: var(--blue);
+}
+
 /* ABOUT SUMMARY SECTION */
 .about-summary {
   margin-top: var(--space-96);
@@ -62,7 +71,7 @@
 }
 
 .about-summary-desc {
-  max-width: 750px;
+  max-width: 900px;
   margin: 0 auto var(--space-48);
   font-size: var(--body-lg);
   color: var(--gray-700);

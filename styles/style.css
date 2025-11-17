@@ -20,6 +20,9 @@ section {
     margin-bottom: var(--space-32);
 }
 
+.links {
+  text-decoration: none;
+}
 
 /* ========================= */
 /* HERO INTRO */
