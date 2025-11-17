@@ -1,7 +1,7 @@
 @import url("global.css");
 
 /* ===========================
-    FOOTER  
+      FOOTER  
 =========================== */
 
 .site-footer {
@@ -12,22 +12,31 @@
     border-top-right-radius: 18px;
 }
 
-/* GRID LAYOUT */
+/* 4 COLUMN LAYOUT */
 .footer-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 48px;
-    align-items: start;
     padding-bottom: 40px;
 }
 
-/* LEFT COLUMN */
+/* ----------------------------------
+   COLUMN BASE STYLE
+------------------------------------*/
+.footer-col h3,
+.footer-col h4 {
+    margin-bottom: 16px;
+}
+
 .footer-logo {
     font-family: var(--font-serif);
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--ink);
-    margin-bottom: 12px;
+}
+
+.footer-logo-accent {
+    color: var(--blue);
 }
 
 .footer-desc {
@@ -36,22 +45,80 @@
     line-height: 1.6;
 }
 
-/* CENTER COLUMN */
-.footer-heading {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: var(--ink);
+/* ----------------------------------
+   BLOG LINKS
+------------------------------------*/
+.footer-links {
+    list-style: none;
 }
 
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff4f70;
+    transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #d93758;
+}
+
+/* ----------------------------------
+   CONNECT SECTION
+------------------------------------*/
+/* Fix spacing & alignment in CONNECT section */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;                 /* gap between each item */
+    margin-top: 10px;
+}
+
+.contact-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;                 /* space between icon + text */
+    font-size: 15px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.contact-list a img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.85;
+}
+
+/* hover effect */
+.contact-list a:hover {
+    color: #ff6f61;            /* your peach/pink highlight */
+}
+
+/* Better horizontal alignment of the 4 columns */
+.footer-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;                 /* spacing between columns */
+    align-items: start;        /* align all tops equally */
+}
+
+/* ----------------------------------
+   SUBSCRIBE FORM
+------------------------------------*/
 .footer-email {
     display: flex;
     gap: 12px;
+    margin-top: 6px;
 }
 
 .footer-email input {
     padding: 12px 16px;
-    border-radius: 8px;
+    border-radius: var(--btn-radius);
     border: 1px solid var(--gray-300);
     font-size: 14px;
     flex: 1;
@@ -63,7 +130,7 @@
     background: var(--blue);
     color: white;
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: var(--btn-radius);
     border: none;
     font-weight: 600;
     cursor: pointer;
@@ -75,26 +142,9 @@
     transform: translateY(-2px);
 }
 
-/* RIGHT COLUMN */
-.footer-icons {
-    display: flex;
-    gap: 18px;
-    margin-top: 6px;
-}
-
-.footer-icons img {
-    width: 26px;
-    height: 26px;
-    opacity: 0.8;
-    transition: 0.25s ease;
-}
-
-.footer-icons img:hover {
-    opacity: 1;
-    transform: translateY(-2px);
-}
-
-/* ---------- DIVIDER LINE ---------- */
+/* ----------------------------------
+   DIVIDER + COPYRIGHT
+------------------------------------*/
 .footer-divider {
     width: 100%;
     height: 1px;
@@ -102,10 +152,21 @@
     margin: 20px 0 16px;
 }
 
-/* COPYRIGHT */
 .copyright {
     font-size: 14px;
     color: var(--gray-500);
     text-align: left;
-    margin-top: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
 }

@@ -239,3 +239,53 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* ------------------------------
+   EXTRA URLS SECTION
+-------------------------------*/
+
+.extra-links {
+    margin-top: 80px;
+    margin-bottom: var(--space-100);
+    text-align: center;
+}
+
+.extra-links .main-heading {
+    margin-bottom: 10px;
+}
+
+.extra-links .desc {
+    color: var(--gray-700);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Grid for 4 buttons */
+.extra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.extra-btn {
+    display: block;
+    padding: 16px 24px;
+    background: var(--white);
+    border-radius: 10px;
+    border: 2px solid var(--gray-300);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--ink);
+    box-shadow: var(--shadow-subtle);
+    transition: 0.25s ease;
+    text-align: center;
+}
+
+.extra-btn:hover {
+    background: var(--gray-100);
+    transform: translateY(-3px);
+    border-color: var(--blue);
+}

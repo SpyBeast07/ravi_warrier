@@ -1,273 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ravi Warrier</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Ravi Warrier</title>
 
-    <link rel="icon" type="image/png" href="assets/ravi.jpg" />
+        <link rel="icon" type="image/png" href="assets/ravi.jpg" />
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/new.css" />
-</head>
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/new.css" />
+    </head>
 
-<body>
-    <div id="navbar-container"></div>
-    <script>
-        fetch("navbar.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("navbar-container").innerHTML = data);
-    </script>
+    <body>
+        <div id="navbar-container"></div>
+        <script>
+            fetch("navbar.html")
+                .then(res => res.text())
+                .then(data => document.getElementById("navbar-container").innerHTML = data);
+        </script>
 
-    <!-- HERO -->
-    <section id="hero" class="hero">
-        <div class="hero-inner">
+        <!-- HERO INTRO -->
+        <section class="home-hero">
+            <h1 class="home-main-title">Ravi <span class="accent">Warrier</span></h1>
+            <p class="home-subtitle">Founder-Educator | Author | Strategy Guide</p>
 
-            <h1 class="hero-heading h1">You've Survived the Pivot.<br>Now What?</h1>
-            <p class="hero-subheading">I help founders turn clarity into momentum.</p>
-
-            <div class="hero-cta">
-                <a href="triology_page.html" class="btn btn-primary">View the Trilogy Books</a>
-                <a href="about.html" class="btn btn-secondary">Meet Your Guide</a>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ========================= -->
-    <!--  SECTION 1 — ABOUT INTRO  -->
-    <!-- ========================= -->
-
-    <section class="founder-intro">
-        <div class="intro-left">
-            <h2>From Battlefield to Boardroom</h2>
-
-            <p>
-                You're not just a founder; you're a strategist navigating chaos.
-                I'm <strong>Ravi Warrier</strong>. I translate the timeless principles of
-                Sun Tzu's <em>The Art of War</em> and the rigorous discipline of modern
-                operating systems into actionable playbooks for founders like you.<br><br>
-
-                My work isn't about writing books—it’s about providing the mental models
-                and daily rituals you need to win your market.
+            <p class="home-description">
+                I help founders who've survived the pivot turn chaos into               systematic execution.
             </p>
 
-            <a href="about.html" class="btn btn-primary intro-btn">Read Full Story →</a>
-        </div>
-    </section>
+            <div class="home-cta">
+                <a href="#" class="btn btn-primary">Funding Pitch</a>
+                <a href="blogs.html" class="btn btn-secondary">Read Blogs</a>
+                <a href="triology_page.html" class="btn btn-secondary">Trilogy</a>
+            </div>
+        </section>
 
 
-    <!-- ======================================== -->
-    <!--  SECTION 2 — DO THESE SOUND FAMILIAR?   -->
-    <!-- ======================================== -->
+        <!-- ========================= -->
+        <!-- SECTION: ABOUT THE AUTHOR -->
+        <!-- ========================= -->
+        <section class="author-section container">
+            <h2 class="section-title">From Battlefield to Boardroom</h2>
 
-    <section class="pain-points">
-        <h2 class="pain-heading">Do These Sound Familiar?</h2>
-        <p class="pain-subheading">
-            You're not alone. These are the battles every post-pivot founder faces.
-        </p>
+            <div class="author-grid">
 
-        <div class="pain-grid">
+                <!-- LEFT — IMAGE COLLAGE -->
+                <div class="author-photos">
+                    <div class="col">
+                        <img src="../assets/image-1.jpeg" alt="" class="col-1">
+                        <img src="../assets/image-2.jpg" alt="" class="col-2">
+                    </div>
 
-            <div class="pain-card">
-                <h3>Strategic Fog</h3>
-                <p>
-                    You pivoted, but now face decision paralysis. Every direction seems
-                    equally valid and equally risky. Your burn rate is climbing, but you're
-                    not sure which battle to fight first.
-                </p>
+                    <div class="col">
+                        <img src="../assets/images-3.jpeg" alt="" class="col-3">
+                    </div>
+                </div>
+
+                <!-- RIGHT — CARD -->
+                <div class="author-card card">
+                    <h3 class="author-name">Ravi Warrier</h3>
+                    <p class="author-role">Founder, Educator & Strategy Guide</p>
+                    <p class="author-desc">
+                        I translate battlefield strategy and execution discipline into 
+                        practical playbooks founders can apply today.  
+                        My work focuses on clarity, operating systems, and mental models that scale.
+                    </p>
+
+                    <a href="about.html" class="btn btn-primary">Read Full Story →</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SECTION: UPCOMING EVENTS -->
+        <!-- ========================= -->
+        <section class="events-section container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <p class="event-desc">Live workshops, masterclasses & strategic teardown sessions.</p>
+
+            <div class="event-bar">
+
+                <!-- LEFT -->
+                <div class="e-left">
+                    <p><strong>Date:</strong> Jan 28, 2025</p>
+                    <p><strong>Time:</strong> 7:00 PM IST</p>
+                    <p><strong>Location:</strong> Bengaluru</p>
+                </div>
+
+                <!-- MIDDLE -->
+                <div class="e-middle">
+                    <h3 class="event-title">Founder Operating System Masterclass</h3>
+                    <p class="event-text">
+                        A hands-on session on operating rhythms, clarity systems, and execution disciplines for founders.
+                    </p>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="e-right">
+                    <a href="events.html" class="btn btn-primary">View All Events</a>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <!-- ========================= -->
+        <!-- SECTION: TRILOGY -->
+        <!-- ========================= -->
+        <section class="triology-section container">
+            <h2 class="section-title">Trilogy</h2>
+            <p class="triology-desc">
+                The three-book series that helps founders gain clarity, build systems, 
+                and master strategic execution.
+            </p>
+
+            <div class="triology-grid">
+                <img src="../assets/book1.jpg" alt="Book 1">
+                <img src="../assets/book2.jpg" alt="Book 2">
+                <img src="../assets/book3.jpg" alt="Book 3">
             </div>
 
-            <div class="pain-card">
-                <h3>Firefighting Fatigue</h3>
-                <p>
-                    You've achieved product-market fit, but operations are a mess. Overlapping
-                    roles, missed deadlines, founder burnout. You're working harder but not smarter.
-                </p>
-            </div>
+            <a href="triology_page.html" class="btn btn-secondary triology-btn">Visit Trilogy</a>
+        </section>
 
-            <div class="pain-card">
-                <h3>Execution Chaos</h3>
-                <p>
-                    Your strategy is brilliant—but daily execution is inconsistent.
-                    No systems, no accountability, no predictable growth.
-                    You're stuck in reactive mode.
-                </p>
-            </div>
 
-            <div class="pain-card">
-                <h3>Team Misalignment</h3>
-                <p>
-                    Everyone's busy, but are they building the right things?
-                    Communication breaks down. Priorities shift weekly.
-                    Results feel random.
-                </p>
-            </div>
+        <!-- Footer -->
+        <div id="footer-container"></div>
+        <script>
+            fetch("footer.html")
+                .then(res => res.text())
+                .then(data => document.getElementById("footer-container").innerHTML = data);
+        </script>
 
-            <div class="pain-card">
-                <h3>Investor Pressure</h3>
-                <p>
-                    Your board wants metrics, velocity, and clarity. But you're presenting hope
-                    instead of systems. Confidence is wavering.
-                </p>
-            </div>
+        <script>
+            // small JS: mobile menu toggle & year
+            (function () {
+                const navToggle = document.getElementById('navToggle');
+                const navLinks = document.getElementById('navLinks');
+                navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 
-            <div class="pain-card">
-                <h3>Scaling Uncertainty</h3>
-                <p>
-                    What got you here won't get you there. You need frameworks that scale,
-                    not founder instincts that don’t.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="why-visit">
-        <p class="section-tag">WHY PEOPLE VISIT</p>
-        <h2 class="section-heading">What brings founders here</h2>
-
-        <div class="why-grid">
-            <div class="why-card">
-                <h3>Understand my operating system</h3>
-                <p>See how I think about strategy, design, and execution.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>Fix execution bottlenecks</h3>
-                <p>Find what's actually slowing you down as a founder.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>Get real founder guidance</h3>
-                <p>Not theory. Practical frameworks you can use today.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>Join the community</h3>
-                <p>Practice with other founders who value clarity.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="get-started">
-        <p class="section-tag">GET STARTED</p>
-        <h2 class="section-heading">Three ways to begin</h2>
-
-        <div class="start-grid">
-
-            <div class="start-item">
-                <h3>Founder Assessment</h3>
-                <p>AI-powered evaluation of your strategy, design, and execution gaps.</p>
-                <a href="assessment.html" class="gs-btn">Take Assessment →</a>
-            </div>
-
-            <div class="start-item">
-                <h3>Join the Community</h3>
-                <p>Weekly AMAs, practice circles, and high-signal founder discussions.</p>
-                <a href="community.html" class="gs-btn">Join Community →</a>
-            </div>
-
-            <div class="start-item">
-                <h3>Contact Ravi</h3>
-                <p>Reach out for guidance, collaborations, consulting, or speaking requests.</p>
-                <a href="contact.html" class="gs-btn">Contact →</a>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="interested-more">
-
-        <p class="section-tag">INTERESTED MORE?</p>
-        <h2 class="section-heading">Explore Further</h2>
-
-        <div class="more-grid">
-
-            <div class="more-item">
-                <h3>Work With Me</h3>
-                <p class="sub">Consulting</p>
-                <a href="workwithme.html" class="more-btn">Work With Me →</a>
-            </div>
-
-            <div class="more-item">
-                <h3>Invite Me to Speak</h3>
-                <p class="sub">Speaking</p>
-                <a href="speaking.html" class="more-btn">Invite Me to Speak →</a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <div id="footer-container"></div>
-    <script>
-        fetch("footer.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("footer-container").innerHTML = data);
-    </script>
-
-    <script>
-        // small JS: mobile menu toggle & year
-        (function () {
-            const navToggle = document.getElementById('navToggle');
-            const navLinks = document.getElementById('navLinks');
-            navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-
-            // smooth scroll for internal anchors
-            document.querySelectorAll('a[href^="#"]').forEach(a => {
-                a.addEventListener('click', function (e) {
-                    const href = this.getAttribute('href');
-                    if (href.length > 1) {
-                        e.preventDefault();
-                        const el = document.querySelector(href);
-                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        navLinks.classList.remove('open');
-                    }
+                // smooth scroll for internal anchors
+                document.querySelectorAll('a[href^="#"]').forEach(a => {
+                    a.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+                        if (href.length > 1) {
+                            e.preventDefault();
+                            const el = document.querySelector(href);
+                            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            navLinks.classList.remove('open');
+                        }
+                    });
                 });
-            });
 
-            // year
-            document.getElementById('year').textContent = new Date().getFullYear();
-        })();
-    </script>
+                // year
+                document.getElementById('year').textContent = new Date().getFullYear();
+            })();
+        </script>
 
-    <script>
-        // Navbar hide/show on scroll
-        (function () {
-            let lastScroll = 0;
-            const navbar = document.querySelector('.nav-wrap');
+        <script>
+            // Navbar hide/show on scroll
+            (function () {
+                let lastScroll = 0;
+                const navbar = document.querySelector('.nav-wrap');
 
-            window.addEventListener('scroll', () => {
-                const currentScroll = window.pageYOffset;
+                window.addEventListener('scroll', () => {
+                    const currentScroll = window.pageYOffset;
 
-                if (currentScroll <= 0) {
-                    navbar.classList.remove('hidden');
-                    return;
-                }
+                    if (currentScroll <= 0) {
+                        navbar.classList.remove('hidden');
+                        return;
+                    }
 
-                if (currentScroll > lastScroll && !navbar.classList.contains('hidden')) {
-                    // scrolling down → hide
-                    navbar.classList.add('hidden');
-                } else if (currentScroll < lastScroll && navbar.classList.contains('hidden')) {
-                    // scrolling up → show
-                    navbar.classList.remove('hidden');
-                }
+                    if (currentScroll > lastScroll && !navbar.classList.contains('hidden')) {
+                        // scrolling down → hide
+                        navbar.classList.add('hidden');
+                    } else if (currentScroll < lastScroll && navbar.classList.contains('hidden')) {
+                        // scrolling up → show
+                        navbar.classList.remove('hidden');
+                    }
 
-                lastScroll = currentScroll;
-            });
-        })();
-    </script>
-</body>
+                    lastScroll = currentScroll;
+                });
+            })();
+        </script>
+    </body>
 
 
-</html>
+    </html>
