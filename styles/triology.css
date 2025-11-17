@@ -170,7 +170,7 @@ input[type="radio"] { display: none; }
 }
 
 .roadmap-img {
-    width: 220px;
+    width: 200px;
     height: 300px;
     object-fit: cover;
     border-radius: var(--card-radius);
@@ -422,7 +422,7 @@ blockquote {
 
 
 .book-cover {
-    width: 420px;
+    width: 350px;
     height: 520px;
     object-fit: cover;
     border-radius: var(--card-radius);
